@@ -1,0 +1,154 @@
+body{
+	background: url(12_col.gif) center top repeat-y;
+	background-size: 90%;
+}  
+
+[class*="*"]
+div,    
+.header,
+.box1,
+.box2,
+.box3,
+.main,
+.sidebar,
+.footer,
+.item1,
+.item2,
+.item3,
+.item4 {
+	border: 2px solid black;
+}
+
+.header {
+	grid-area: header;
+}
+
+.buttons {
+	display: flex;
+	
+}
+
+.box1 {
+	grid-area:box1;
+}
+
+.box2 {
+	grid-area:box2;
+}
+
+.box3 {
+	grid-area:box3;
+}
+
+.main {
+	grid-area:main;
+}
+
+.sidebar {
+	grid-area:sidebar;
+}
+
+.footer {
+	grid-area: footer;
+	display:grid;
+	grid-gap: 2% 2%;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4";
+}
+
+.item1 {
+	grid-area: i1;
+	margin: 5px;
+}
+
+.item2 {
+	grid-area: i2;
+	margin: 5px;
+}
+
+.item3 {
+	grid-area: i3;
+	margin: 5px;
+}
+
+.item4 {
+	grid-area: i4;
+	margin: 5px;
+}
+
+.container{
+	width: 90%;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: repeat(4, minmax(200px, 1fr));
+	grid-template-areas:
+	"header header header header header header header header header header header header"
+	"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1" 
+	"main main main main main main main main main sidebar sidebar sidebar"
+	"footer footer footer footer footer footer footer footer footer footer footer footer";
+	grid-gap: 2% 2%;
+}
+
+/*Laptops*/
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+	.container {
+		grid-template-rows: repeat(4, minmax(200px, 1fr));
+		grid-template-areas:
+		"header header header header header header header header header header header header"
+		"box1 box1 box1 box2 box2 box2 box2 box2 box2 box3 box3 box3"
+		"main main main main main main main main sidebar sidebar sidebar sidebar"
+		"footer footer footer footer footer footer footer footer footer footer footer footer";
+	}
+}
+
+/* Tablets */
+@media only screen and (min-width: 760px) and (max-width: 960px){
+	.container {
+		grid-gap: 2% 4%;
+		grid-template-rows: repeat(3, 1fr) 2fr;
+		grid-template-columns: repeat(6, 1fr);
+		grid-template-areas: 
+		"header header header header header header"
+		"box1 box1 box2 box2 box3 box3"
+		"main main main sidebar sidebar sidebar"
+		"footer footer footer footer footer footer";
+	}
+
+	.footer {
+		grid-template-columns: repeat(2, 1fr);
+		grid-template-rows: repeat(2, minmax(180px, 1fr));
+		grid-template-areas: 
+		"i1 i2"
+		"i3 i4";
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container{
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(9, minmax(100px, auto)) 100px;
+		grid-template-areas: 
+		"header"
+		"box1"
+		"box2"
+		"box3"
+		"main"
+		"sidebar"
+		"footer"
+		"footer"
+		"footer"
+		"footer";
+	}
+	.footer {
+		grid-row-gap: 4%;
+		grid-template-columns: 1fr;
+		grid-template-rows: repeat(4, minmax(100px, 100px));
+		grid-template-areas: 
+		"i1"
+		"i2"
+		"i3"
+		"i4";
+	}
+}
