@@ -4,9 +4,10 @@ body{
 }
 
 ul {
+	display: flex;
 	list-style: none;
-	margin: 0;
-	padding-left: 0;
+	/*margin: 0;*/
+	/*padding-left: 0;*/
 }
 
 .nav-list {
@@ -22,18 +23,30 @@ ul {
 	/*color: #fff;*/
 	/*background: #000000;*/
 	display: flex;
-
+	justify-content: space-between;
 	float: left;
 	padding: 1rem;
-	position: relative;
+	/*position: relative;*/
 	text-decoration: none;
 	transition-duration: 0.5s;
 }
 
-.login,
-.nav-list li:last-child {
-	float: right;
+.login {
+	margin-left: auto;
 }
+.cart {
+	/*justify-content: flex-end;*/
+}
+
+#logo {
+	display: flex;
+	justify-content: center;
+}
+/*li .login,
+li .cart {
+	display: flex;
+	justify-content: flex-end;
+}*/
 
 .nav-list li:hover {
 	background: #0EA2DF;
