@@ -49,8 +49,6 @@ li {
 
 #logo {
 	margin: auto;
-
-
 }
 .login {
 	margin-left: auto;
@@ -75,10 +73,10 @@ div,
 .main,
 .sidebar,
 .footer,
-.item1,
-.item2,
-.item3,
-.item4 {
+.footer-box1,
+.footer-box2,
+.footer-box3,
+.footer-box4{
 	border: 2px solid black;
 }
 
@@ -120,22 +118,26 @@ div,
 	grid-template-areas: "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4";
 }
 
-.item1 {
+.footer-box1 {
+	display: flex;
+	flex-direction: column;
 	grid-area: i1;
 	margin: 5px;
 }
 
-.item2 {
+.footer-box2 {
 	grid-area: i2;
 	margin: 5px;
 }
 
-.item3 {
+.footer-box3 {
+	display: flex;
+	flex-direction: row;
 	grid-area: i3;
 	margin: 5px;
 }
 
-.item4 {
+.footer-box4 {
 	grid-area: i4;
 	margin: 5px;
 }
