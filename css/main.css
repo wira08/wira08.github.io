@@ -295,8 +295,8 @@ div,
 	input[type=checkbox]:checked ~ .menu {
 	  margin-left: 0;
 	}
-	input[type=checkbox]:checked ~ main {
-	  margin-right: 360px;
+	input[type=checkbox]:checked ~ header {
+	  margin-left: 360px;
 	}
   
 	#menu-fb,#menu-insta{
