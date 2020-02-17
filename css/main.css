@@ -62,17 +62,6 @@ p {
 }
 /*header icons ends*/
 
-/*footer socials*/
-.fa-facebook, .fa-instagram, .fa-twitter {
-	font-size: 30px;
-	color: #000000;
-}
-
-.fa:hover {
-	color: #1877f2;
-}
-/*footer socials end*/
-
 #logo {
 	margin: auto;
 }
@@ -167,6 +156,11 @@ div,
 	margin: 5px;
 }
 
+.footer-box4 {
+	grid-area: i4;
+	margin: 5px;
+}
+
 .social {
 	justify-content: space-around;
 	display: flex;
@@ -174,10 +168,16 @@ div,
 	flex-direction: column;
 }
 
-.footer-box4 {
-	grid-area: i4;
-	margin: 5px;
+/*footer socials*/
+.fa-facebook, .fa-instagram, .fa-twitter {
+	font-size: 30px;
+	color: #000000;
 }
+
+.fa:hover {
+	color: #1877f2;
+}
+/*footer socials end*/
 
 .container{
 	width: 100%;
