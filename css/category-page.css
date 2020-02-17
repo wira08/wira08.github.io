@@ -1,7 +1,21 @@
 @import 'main.css';
 /* Phones */
 @media screen and (max-width: 768px) {
-
+	.container1 {
+        border: 1px solid black;
+    }
+    .highlight1 {
+        border: 1px solid black;
+    }
+    .highlight2 {
+        border: 1px solid black;
+    }
+    .highlight3 {
+        border: 1px solid black;
+    }
+    .highlight4 {
+        border: 1px solid black;
+    }
 }
 /* Tablets */
 @media only screen and (min-width: 760px) and (max-width: 960px) {
