@@ -107,6 +107,8 @@ div,
 
 .box1 {
 	grid-area:box1;
+	display: flex;
+    justify-content: space-around;
 }
 
 .box2 {
@@ -229,9 +231,15 @@ div,
 		align-items: center;
 		margin-top: -50px;
 	}
+	#mobile-logo {
+		margin-left: auto;
+	}
+	#mobile-login {
+		margin-left: auto;
+		padding-right: 5px;
+	}
 	#mobile-cart {
-		display: flex;
-		margin-left: 0;
+		padding: 0 15px;
 	}
 }
 /*Mobile*/
@@ -266,10 +274,10 @@ div,
 		margin-top: -50px;
 	}
 	#mobile-cart{
-		margin-right: 10px;
+		margin-left: 10px;
 	}
 	#mobile-login{
-		margin-left: 10px;
+		margin-right: 10px;
 	}
 }
 
