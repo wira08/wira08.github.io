@@ -184,13 +184,13 @@ div,
 	margin: 20px auto;
 	display: grid;
 	grid-template-columns: repeat(12, 1fr);
-	grid-template-rows: repeat(4, minmax(200px, 1fr));
+	/*grid-template-rows: repeat(4, minmax(200px, auto));*/
 	grid-template-areas:
 	"header header header header header header header header header header header header"
 	"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1" 
-	"main main main main main main main main main sidebar sidebar sidebar"
+	"main main main main main main main main main main main main"
 	"footer footer footer footer footer footer footer footer footer footer footer footer";
-	grid-gap: 2% 2%;
+	/*grid-gap: 2% 2%;*/
 }
 
 /*Laptops*/
@@ -242,11 +242,11 @@ div,
 		padding: 0 15px;
 	}
 }
-
+/*Mobile*/
 @media screen and (max-width: 768px) {
 	.container{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(9, minmax(100px, auto)) 100px;
+		grid-template-rows: repeat(9, minmax(auto, auto));
 		grid-template-areas: 
 		"header"
 		"box1"
@@ -324,9 +324,9 @@ div,
 		margin-left: 340px;
 	}
 
-	input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
-		/*display: none;*/
-	}
+	/*input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
+		display: none;
+	}*/
 
 	input[type=checkbox]:checked ~ .nav-toggle span:nth-child(1) {
 		top: 8px;

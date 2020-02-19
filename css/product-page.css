@@ -1,5 +1,6 @@
-@import 'main.css';
+/*Page by Marcus Sandström */
 /* CSS Document - Product-page G-Focus */
+@import 'main.css';
 
 /* Phones */
 @media screen and (max-width: 768px) {
@@ -15,5 +16,51 @@
 }
 /* Desktops */
 @media screen and (min-width: 1200px) {
+
+.col-1 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url('../images/sinatraa.jpg');
+  }
+
+.col-2 {
+    float: left;
+    width: 50%;
+    height: 350px;
+    background-image: url('../images/faker.jpg');
+    background-repeat: no-repeat;
+  }
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+h2{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.txt{
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+}
+
+.bio{
+    position: absolute;
+    top: 485px;
+    right: 300px;
+    color: #ffffff;
+    font-size: 18px;
+    text-shadow:#000;
+}
 
 }
