@@ -188,7 +188,7 @@ div,
 	"box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1 box1" 
 	"main main main main main main main main main main main main"
 	"footer footer footer footer footer footer footer footer footer footer footer footer";
-	grid-gap: 2% 2%;
+	/*grid-gap: 2% 2%;*/
 }
 
 /*Laptops*/
@@ -224,11 +224,11 @@ div,
 		"i3 i4";
 	}
 }
-
+/*Mobile*/
 @media screen and (max-width: 768px) {
 	.container{
 		grid-template-columns: 1fr;
-		grid-template-rows: repeat(9, minmax(100px, auto)) 100px;
+		grid-template-rows: repeat(9, minmax(auto, auto));
 		grid-template-areas: 
 		"header"
 		"box1"
