@@ -1,6 +1,198 @@
 @import 'main.css';
 /* Phones */
 @media screen and (max-width: 768px) {
+	body {
+        background-color: rgb(4,180,134);
+    }
+    .mobile-header {
+        background-image: url(../images/headerback.png);
+        background-size: cover;
+    }
+    .caption1 {
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid black;
+        color: white;
+        background-color: black;
+        border-radius: 50px 50px 0 0;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .container1 {
+        border: 1px solid black;
+        display: grid;
+        grid-template-rows: 200px 200px 200px; 
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "highlight1 highlight1"
+            "highlight2 highlight3"
+            "highlight4 highlight4";
+        background-color: black;
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 15px;
+    }
+    .highlight1 {
+        grid-area: highlight1;
+        border: 1px solid black;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/WoWimg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .highlight2 {
+        grid-area: highlight2;
+        border: 1px solid black;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/Kenshiimg.png);
+        background-size: cover;
+    }
+    .highlight3 {
+        grid-area: highlight3;
+        border: 1px solid black;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/LoLimg.jpg);
+        background-size: cover;
+        background-position: center;
+    }
+    .highlight4 {
+        grid-area: highlight4;
+        border: 1px solid black;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/Overwatchimg.jpg);
+        background-size: cover;
+    }
+    .caption2 {
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid black;
+        color: white;
+        background-color: black;
+        border-radius: 50px 50px 0 0;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .container2 {
+        border: 1px solid black;
+        display: grid;
+        grid-template-rows: 75px 75px 75px 75px 75px; 
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "label1"
+            "label2"
+            "label3"
+            "label4"
+            "label5";
+        text-align: left;
+        background-color: black;
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 15px;
+    }
+    .label1 {
+        font-weight: bold;
+        text-decoration: underline;
+        grid-area: label1;
+        font-size: 20px;
+        color: rgb(4,180,134);
+        background-image: url(../images/FPSbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 2px 0 2px;
+    }
+    .label2 {
+        font-weight: bold;
+        text-decoration: underline;
+        grid-area: label2;
+        font-size: 20px;
+        color: rgb(4,180,134);
+        background-image: url(../images/HnSbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 2px 0 2px;
+    }
+    .label3 {
+        font-weight: bold;
+        text-decoration: underline;
+        grid-area: label3;
+        font-size: 20px;
+        color: rgb(4,180,134);
+        background-image: url(../images/Roguelikebanner.png);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 2px 0 2px;
+    }
+    .label4 {
+        font-weight: bold;
+        text-decoration: underline;
+        grid-area: label4;
+        font-size: 20px;
+        color: rgb(4,180,134);
+        background-image: url(../images/Simbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 2px 0 2px;
+    }
+    .label5 {
+        font-weight: bold;
+        text-decoration: underline;
+        grid-area: label5;
+        font-size: 20px;
+        color: rgb(4,180,134);
+        background-image: url(../images/Survivalbanner.jpg);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 2px 0 2px;
+    }
+    .caption3 {
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        border: 1px solid black;
+        color: white;
+        background-color: black;
+        border-radius: 50px 50px 0 0;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .container3 {
+        border: 1px solid black;
+        display: grid;
+        grid-template-rows: 100px; 
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "description";
+        text-align: left;
+        background-color: black;
+        border-radius: 0 0 15px 15px;
+        padding-bottom: 15px;
+    }
+    .condesc {
+        grid-area: description;
+        color: white;
+        font-size: 20px;
+    }
+}
+/* Tablets */
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+
+}
+/* Laptops */
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+
+}
+/* Desktops */
+@media screen and (min-width: 1200px) {
+    .mobile-header {
+        background-image: url(../images/headerback.png);
+        background-size: cover;
+    }
 	.container1 {
         border: 1px solid black;
     }
@@ -16,16 +208,4 @@
     .highlight4 {
         border: 1px solid black;
     }
-}
-/* Tablets */
-@media only screen and (min-width: 760px) and (max-width: 960px) {
-
-}
-/* Laptops */
-@media screen and (max-width: 1200px) and (min-width: 960px) {
-
-}
-/* Desktops */
-@media screen and (min-width: 1200px) {
-
 }
