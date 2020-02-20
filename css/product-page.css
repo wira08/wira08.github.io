@@ -17,6 +17,7 @@
 /* Desktops */
 @media screen and (min-width: 1200px) {
 
+/*Section*/
 .col-1 {
     float: left;
     width: 50%;
@@ -60,7 +61,56 @@ h2{
     right: 300px;
     color: #ffffff;
     font-size: 18px;
-    text-shadow:#000;
+    text-shadow: 2px 2px #8f00ff;
 }
+/*Section*/
+
+/*Main*/
+/* Create three equal columns that floats next to each other */
+
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 10px;
+  height: 425px; /* Should be removed. Only for demonstration */
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: 6px black;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+
+.card button:hover {
+  opacity: 0.7;
+}
+/*Main*/
 
 }
