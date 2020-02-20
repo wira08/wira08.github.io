@@ -21,23 +21,26 @@
 .col-1 {
     float: left;
     width: 50%;
-    height: 350px;
+    height:350px;
     background-image: url('../images/sinatraa.jpg');
-  }
+}
 
 .col-2 {
     float: left;
     width: 50%;
-    height: 350px;
+    height:350px;
     background-image: url('../images/faker.jpg');
-    background-repeat: no-repeat;
-  }
+}
 
-.row:after {
+.row2{
+  width: 100%;
+}
+
+.row2::after {
     content: "";
-    display: table;
     clear: both;
-  }
+    display: table;
+}
 
 h2{
     color: #ffffff;
@@ -67,8 +70,6 @@ h2{
 
 /*Main*/
 /* Create three equal columns that floats next to each other */
-
-
 .column {
   float: left;
   width: 33.33%;
