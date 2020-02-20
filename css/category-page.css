@@ -9,6 +9,10 @@
         background-size: cover;
         margin-top: 0;
     }
+    .mobile-header img {
+        background-color: rgba(255,255,255,0.2);
+        border-radius: 150%;
+    }
     .fa .fa-shopping-cart {
         margin-top: -50px;
     }
@@ -158,26 +162,47 @@
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        border: 1px solid black;
-        color: white;
-        background-color: black;
+        border: 4px solid black;
+        color: black;
+        background-color: rgb(143,0,255);
         padding: 10px;
         margin-bottom: -1px;
     }
     .container3 {
         border: 1px solid black;
         display: grid;
-        grid-template-rows: 100px; 
-        grid-template-columns: 100%;
+        grid-template-rows:; 
+        grid-template-columns:;
         grid-template-areas: 
             "description";
         text-align: left;
         background-color: black;
+        border-radius: 0 0 15px 15px;
     }
     .condesc {
         grid-area: description;
         color: white;
         font-size: 20px;
+        margin: 10px;
+    }
+    .request {
+        color: rgb(4,180,134);
+        text-decoration: underline;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+    }
+    .footer-box1 {
+        background-color: rgb(88,250,172);
+    }
+    .footer-box2 {
+        background-color: rgb(88,250,172);
+    }
+    .footer-box3 {
+        background-color: rgb(88,250,172);
+    }
+    .footer-box4 {
+        background-color: rgb(88,250,172);
     }
 }
 /* Tablets */
