@@ -22,10 +22,13 @@ var checkHeader = _.throttle(() => {
     // If we've scrolled 100px, add "sticky" class to the header
     if (scrollPosition > 100){
         document.querySelector('header').classList.add('sticky');
+        document.querySelector('label').classList.add('sticky');
+
     }
     // If not, remove "sticky" class from header
     else {
         document.querySelector('header').classList.remove('sticky');
+        document.querySelector('label').classList.remove('sticky');
     }
 }, 300);
 

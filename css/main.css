@@ -97,6 +97,9 @@ header.sticky {
 	height: 135px;
 	margin-top: -35px;
 }
+label.sticky{
+	margin-top: -30px;
+}
 
 .header {
 	grid-area: header;
@@ -104,6 +107,7 @@ header.sticky {
 	width: 100%;
 	height: 200px;
 	top: 0;
+	z-index: 2;
 	background-color: red;
 
 	/*add the animation*/
@@ -222,7 +226,7 @@ header.sticky {
 }
 
 /* Tablets */
-@media only screen and (min-width: 760px) and (max-width: 960px){
+@media only screen and (min-width: 768px) and (max-width: 960px){
 	.container {
 		/*grid-gap: 2% 4%;*/
 		/*grid-template-rows: repeat(3, 1fr) 2fr;*/
@@ -245,7 +249,6 @@ header.sticky {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: -30px;
 	}
 	#mobile-logo {
 		margin-left: auto;
@@ -283,15 +286,13 @@ header.sticky {
 		"i3"
 		"i4";
 	}
-
 	.box1 {
-		margin-top: 120px;
+		margin-top: 200px;
 	}
 	.mobile-header {
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		margin-top: -15px;
 	}
 	#mobile-logo img{
 		width: 240px;
@@ -302,21 +303,34 @@ header.sticky {
 	#mobile-login{
 		margin-right: 10px;
 	}
+
+	.nav-toggle {
+		/*position: fixed !important;*/
+		/*display: block !important;*/
+		top: 50px !important;
+		/*left: 11px !important;*/
+		/*height: 32px !important;*/
+		/*width: 40px !important;*/
+		/*cursor: pointer !important;*/
+		/*z-index: 99 !important;*/
+		/*add the animation*/
+		/*transition: margin 0.3s;*/
+		/*transition-duration: 0.5s;*/
+	}
 }
 
 /*hide navigation menu and show hamburger bar*/
 @media only screen and (max-width: 960px) {
+	
 	.nav-toggle {
 		position: fixed;
 		display: block;
-		top: 10px;
-		left: 10px;
+		top: 65px;
+		left: 11px;
 		height: 32px;
 		width: 40px;
 		cursor: pointer;
 		z-index: 99;
-		margin-right: 10px;
-		margin-top: 27px;
 		/*add the animation*/
 		transition: margin 0.3s;
 		transition-duration: 0.5s;
