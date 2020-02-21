@@ -19,17 +19,17 @@
 
 /*Section*/
 .col-1 {
-    float: left;
-    width: 50%;
-    height:350px;
-    background-image: url('../images/sinatraa.jpg');
+  float: left;
+  width: 50%;
+  height:350px;
+  background-image: url('../images/sinatraa.jpg');
 }
 
 .col-2 {
-    float: left;
-    width: 50%;
-    height:350px;
-    background-image: url('../images/faker.jpg');
+  float: left;
+  width: 50%;
+  height:350px;
+  background-image: url('../images/faker.jpg');
 }
 
 .row2{
@@ -37,34 +37,34 @@
 }
 
 .row2::after {
-    content: "";
-    clear: both;
-    display: table;
+  content: "";
+  clear: both;
+  display: table;
 }
 
 h2{
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .txt{
-    color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-content: center;
-    justify-content: center;
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
 }
 
 .bio{
-    position: absolute;
-    top: 485px;
-    right: 300px;
-    color: #ffffff;
-    font-size: 18px;
-    text-shadow: 2px 2px #8f00ff;
+  position: absolute;
+  top: 485px;
+  right: 300px;
+  color: #ffffff;
+  font-size: 18px;
+  text-shadow: 2px 2px #8f00ff;
 }
 /*Section*/
 
@@ -98,20 +98,20 @@ h2{
 
 .card button {
   border: 6px black;
+  border-radius: 30px;
   outline: 0;
   padding: 12px;
   color: white;
   background-color: #000;
   text-align: center;
-  cursor: pointer;
-  width: 100%;
+  width: 275px;
+  margin: 5px;
   font-size: 18px;
 }
 
-
 .card button:hover {
   opacity: 0.7;
+  cursor: pointer;
 }
 /*Main*/
-
 }
