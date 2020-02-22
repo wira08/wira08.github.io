@@ -297,25 +297,19 @@ label.sticky{
 	#mobile-logo img{
 		width: 240px;
 	}
-	#mobile-cart{
-		margin-left: 10px;
+	#mobile-logo {
+		margin-left: auto;
 	}
-	#mobile-login{
-		margin-right: 10px;
+	#mobile-login {
+		margin-left: auto;
+		padding-right: 5px;
+	}
+	#mobile-cart {
+		padding: 0 15px;
 	}
 
 	.nav-toggle {
-		/*position: fixed !important;*/
-		/*display: block !important;*/
 		top: 50px !important;
-		/*left: 11px !important;*/
-		/*height: 32px !important;*/
-		/*width: 40px !important;*/
-		/*cursor: pointer !important;*/
-		/*z-index: 99 !important;*/
-		/*add the animation*/
-		/*transition: margin 0.3s;*/
-		/*transition-duration: 0.5s;*/
 	}
 }
 
@@ -330,7 +324,7 @@ label.sticky{
 		height: 32px;
 		width: 40px;
 		cursor: pointer;
-		z-index: 99;
+		z-index: 200;
 		/*add the animation*/
 		transition: margin 0.3s;
 		transition-duration: 0.5s;
@@ -358,7 +352,7 @@ label.sticky{
 
 	/*Toggle moving*/
 	input[type=checkbox]:checked ~ .nav-toggle {
-		margin-left: 320px;
+		margin-left: 80%;
 	}
 
 	input[type=checkbox]:checked ~ .nav-toggle span:nth-child(2) {
@@ -388,11 +382,12 @@ label.sticky{
 
 	.menu{
 		position: fixed;
-		margin-left: -322px;
+		margin-left: -101%;
 		padding: 10px;
 		height: 100%;
+		width: 100%;
 		top: 0;
-		opacity: 0.8;
+		/*opacity: 0.8;*/
 		z-index: 100;
 		background-color: #b10000;
 
@@ -406,7 +401,7 @@ label.sticky{
 		list-style: none;
 		align-items: center;
 		flex-direction: column;
-		margin-top: -50px;
+		/*margin-top: -50px;*/
 	}
 
 	.nav-list {
