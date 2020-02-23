@@ -55,7 +55,6 @@ p {
 
 
 /*header icons*/
-
 .fa-shopping-cart, .fa-user {
 	font-size: 35px;
 	color: #000000;
@@ -79,6 +78,7 @@ p {
 a:hover{
 	color: #8f00ff;
 }
+
 
 .vl {
   border-left: 1px solid black;
@@ -132,6 +132,7 @@ div,
   font-size:16px;
   font-weight:800;
   color:#eee;
+  padding-top: 5px;
 }
 
 .isVerified {
@@ -206,8 +207,6 @@ label.sticky{
 
 	/*add the animation*/
 	transition: width 0.3s, height 0.3s, margin 0.3s;
-	/*transition: margin 0.3s;*/
-	/*transition: padding 0.3;*/
 	transition-duration: 0.5s;
 }
 
@@ -223,13 +222,18 @@ label.sticky{
 	align-items: center;
 	margin-top: 200px;
 }
-
-.box2 {
-	grid-area:box2;
+.game1,
+.game2,
+.game3,
+.game4 {
+	transform: scale(0.95);
+	transition:all .5s;
 }
-
-.box3 {
-	grid-area:box3;
+.game1:hover,
+.game2:hover,
+.game3:hover,
+.game4:hover {
+  transform: scale(1.1);
 }
 
 .main {
