@@ -192,7 +192,107 @@ h1{
 }
 
 /* Laptop */
-@media screen and (max-width: 1200px) (min-width: 960px)  {
+@media screen and (max-width: 1200px) and (min-width: 960px)  {
+/*Section*/
+.col-1 {
+  float: left;
+  width: 50%;
+  height:350px;
+  background-image: url('../images/sinatraa.jpg');
+}
+
+.col-2 {
+  float: left;  
+  width: 50%;
+  height:350px;
+  background-image: url('../images/faker.jpg');
+}
+
+.row2{
+  width: 100%;
+}
+
+.row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h2{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.txt{
+  color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+}
+
+.bio{
+  position: absolute;
+  top: 525px;
+  right: 303px;
+  color: #ffffff;
+  font-size: 18px;
+  text-shadow: 2px 2px #8f00ff;
+}
+/*Section*/
+
+/*Main*/
+
+.card img{
+  width: 100%;
+}
+
+.column {
+  padding: 10px;
+  height: 425px; 
+}
+
+.row{
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: row;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+h1{
+  font-size: 24px;
+}
+
+.price {
+  color: grey;
+  font-size: 22px;
+}
+
+.card button {
+  border: 6px black;
+  border-radius: 30px;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  width: 275px;
+  margin: 5px;
+  font-size: 18px;
+}
+
+.card button:hover {
+  opacity: 0.7;
+  cursor: pointer;
+}
+/*Main*/
 
 }
 /* Desktops */
@@ -241,8 +341,8 @@ h2{
 
 .bio{
   position: absolute;
-  top: 485px;
-  right: 300px;
+  top: 525px;
+  right: 303px;
   color: #ffffff;
   font-size: 18px;
   text-shadow: 2px 2px #8f00ff;
@@ -265,13 +365,7 @@ h2{
   justify-content: space-evenly;
   flex-direction: row;
 }
-/*
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-*/
+
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
