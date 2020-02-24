@@ -428,6 +428,14 @@ label.sticky{
 	#mobile-cart {
 		padding: 0 15px;
 	}
+	.front-page-coach{
+		display: flex;
+		flex-wrap: wrap;
+	  }
+	  .front-page-coach>.card.profile{
+		flex: 0 50%;
+		box-sizing: border-box;
+	  }
 }
 /*Mobile*/
 @media screen and (max-width: 768px) {
