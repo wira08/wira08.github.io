@@ -85,22 +85,6 @@ a:hover{
 	height: 50px;
 }
 
-[class*="*"]
-div,    
-.header,
-.box1,
-.box2,
-.box3,
-.main,
-.sidebar,
-.footer,
-.footer-box1,
-.footer-box2,
-.footer-box3,
-.footer-box4{
-	border: 2px solid black;
-}
-
 /*front page coach cards*/
 .main-header{
 	text-align: center;
@@ -123,6 +107,7 @@ div,
 	width: 250px;
 	height: 300px;
 	border-radius:10px;
+	margin: 10px 0;
 	border:none;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 	transition:all .3s;
@@ -345,6 +330,7 @@ label.sticky{
 .footer-box1 {
 	grid-area: i1;
 	margin: 5px;
+	border-right: 1px solid;
 }
 
 .footer-box1, a {
@@ -355,11 +341,13 @@ label.sticky{
 .footer-box2 {
 	grid-area: i2;
 	margin: 5px;
+	border-right: 1px solid;
 }
 
 .footer-box3 {
 	grid-area: i3;
 	margin: 5px;
+	border-right: 1px solid;
 }
 
 .footer-box4 {
@@ -409,6 +397,10 @@ label.sticky{
 		"main main main main main main main main main main main main"
 		"footer footer footer footer footer footer footer footer footer footer footer footer";
 	}
+	.profile {
+		flex: 1 1 190px;
+		margin: 10px 10px;
+	}
 }
 
 /* Tablets */
@@ -446,15 +438,14 @@ label.sticky{
 	#mobile-cart {
 		padding: 0 15px;
 	}
-	/*.front-page-coach{
-		display: flex;
-		flex-wrap: wrap;
-		justify-content: space-between;
-	  }
-	  
-	.front-page-coach.card{
-		width: 50%;
-	  }*/
+	.footer-box2 {
+		border-right: none;
+	}
+
+	.profile {
+		flex: 1 1 290px;
+		margin: 10px 15px;
+	}
 }
 /*Mobile*/
 @media screen and (max-width: 768px) {
@@ -479,6 +470,13 @@ label.sticky{
 		"i2"
 		"i3"
 		"i4";
+	}
+
+	.footer-box1,
+	.footer-box2,
+	.footer-box3 {
+		border-right: none;
+		border-bottom: 1px solid;
 	}
 	.box1 {
 		margin-top: 200px;
