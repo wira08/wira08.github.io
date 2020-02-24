@@ -111,6 +111,7 @@ div,
 	display: flex;
 	justify-content: space-around;
 	flex-wrap: wrap;
+	margin: 20px 0;
 }
 .profile {
 	background-image: url("http://starkovtattoo.spb.ru/images/200/DSC100224440.png");
