@@ -2,9 +2,6 @@
 /* Phones */
 @media screen and (max-width: 768px) {
     /*lila färg rgb(143,0,255)*/
-	body {
-        background-color: rgb(216,216,216);
-    }
     .caption1 {
         margin-top: 200px;
         font-size: 30px;
@@ -35,6 +32,7 @@
         background-size: cover;
         background-position: center;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .wowdesc {
         grid-area: wow;
@@ -47,6 +45,7 @@
         background-image: url(../images/Kenshiimg.png);
         background-size: cover;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .kenshidesc {
         grid-area: kenshi;
@@ -60,6 +59,7 @@
         background-size: cover;
         background-position: center;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .loldesc {
         grid-area: lol;
@@ -72,6 +72,7 @@
         background-image: url(../images/Overwatchimg.jpg);
         background-size: cover;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .overwatchdesc {
         grid-area: ovrwtch;
@@ -88,6 +89,7 @@
         text-shadow: 2px 2px 5px grey;
     }
     .container2 {
+        margin-left: 1px;
         display: grid;
         grid-template-rows: 75px 75px 75px 75px 75px; 
         grid-template-columns: calc(100% / 4) calc(100% / 4 * 3);
@@ -105,7 +107,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 15px;
+        background-color: black;
+        color: white;
     }
     .label1 {   
         grid-area: label1;   
@@ -114,6 +120,7 @@
         background-position: center;
         margin: 3px 3px 5px 3px;
         box-shadow: 1px 1px 5px black;
+        border-radius: 15px 15px 0 0;
     }
     .hacknslash {
         grid-area: hns;
@@ -121,7 +128,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 10px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 5px;
+        background-color: black;
+        color: white;
     }
     .label2 {
         grid-area: label2;
@@ -137,7 +148,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 15px;
+        background-color: black;
+        color: white;
     }
     .label3 {
         grid-area: label3;
@@ -153,7 +168,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 15px;
+        background-color: black;
+        color: white;
     }
     .label4 {
         grid-area: label4;
@@ -169,7 +188,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 15px;
+        background-color: black;
+        color: white;
     }
     .label5 {
         grid-area: label5;   
@@ -178,6 +201,7 @@
         background-position: center top;
         margin: 0 3px 0 3px;
         box-shadow: 1px 1px 5px black;
+        border-radius: 0 0 15px 15px;
     }
     .caption3 {
         margin-top: 25px;
@@ -213,42 +237,20 @@
         font-size: 30px;
         margin: 20px;
     }
-    .footer {
-        background-color: black;
-    }
-    .footer-box1 {
-        color: white;
-    }
-    .footer-box1 a {
-        color: white;
-        text-decoration: underline;
-    }
-    .footer-box2 {
-        color: white;
-    }
-    .footer-box2 a {
-        color: white;
-        text-decoration: underline;
-    }
-    .footer-box3 {
-        color: white;
-    }
-    .footer-box3 a {
-        color: white;
-        text-decoration: underline;
-    }
-    .footer-box4 {
-        color: white;
-    }
-    .footer-box4 p {
-        color: white;
-    }
 }
 /* Tablets */
 @media only screen and (min-width: 760px) and (max-width: 960px) {
-    body {
-        background-color: rgb(216,216,216);
+    /*class from main css file: begin*/
+    .container {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "mainfooter";
     }
+    .footer {
+        grid-area: mainfooter;
+    }
+    /*class from main css file: end*/
     .caption1 {
         margin-top: 200px;
         font-size: 30px;
@@ -277,6 +279,7 @@
         background-size: cover;
         background-position: center;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .wowdesc {
         grid-area: wow;
@@ -289,6 +292,7 @@
         background-image: url(../images/Kenshiimg.png);
         background-size: cover;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .kenshidesc {
         grid-area: kenshi;
@@ -302,6 +306,7 @@
         background-size: cover;
         background-position: center;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .loldesc {
         grid-area: lol;
@@ -314,6 +319,7 @@
         background-image: url(../images/Overwatchimg.jpg);
         background-size: cover;
         box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
     }
     .overwatchdesc {
         grid-area: ovrwtch;
@@ -330,6 +336,7 @@
         text-shadow: 2px 2px 5px grey;
     }
     .container2 {
+        margin-left: 1px;
         display: grid;
         grid-template-rows: 90px 90px 90px 90px 90px; 
         grid-template-columns: calc(100% / 4) calc(100% / 4 * 3);
@@ -347,7 +354,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 30px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
     }
     .label1 {   
         grid-area: label1;   
@@ -356,6 +367,7 @@
         background-position: center;
         margin: 3px 3px 5px 3px;
         box-shadow: 1px 1px 5px black;
+        border-radius: 15px 15px 0 0;
     }
     .hacknslash {
         grid-area: hns;
@@ -363,7 +375,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 30px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
     }
     .label2 {
         grid-area: label2;
@@ -379,7 +395,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 30px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
     }
     .label3 {
         grid-area: label3;
@@ -395,7 +415,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
     }
     .label4 {
         grid-area: label4;
@@ -411,7 +435,11 @@
         text-decoration: underline;
         font-size: 20px;
         text-align: center;
-        margin-top: 25px;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
     }
     .label5 {
         grid-area: label5;   
@@ -420,6 +448,7 @@
         background-position: center top;
         margin: 0 3px 0 3px;
         box-shadow: 1px 1px 5px black;
+        border-radius: 0 0 15px 15px;
     }
     .caption3 {
         margin-top: 25px;
@@ -459,27 +488,506 @@
 }
 /* Laptops */
 @media screen and (max-width: 1200px) and (min-width: 960px) {
-
+    /*class from main css file: begin*/
+    .container {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "mainfooter";
+    }
+    .footer {
+        grid-area: mainfooter;
+    }
+    /*class from main css file: end*/
+    .caption1 {
+        margin-top: 200px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        margin-bottom: -1px;
+        text-shadow: 2px 2px 5px grey;
+    }
+    .container1 {
+        display: grid;
+        grid-template-rows: 200px 120px 200px 90px; 
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "highlight1 highlight3"
+            "wow lol"
+            "highlight2 highlight4"
+            "kenshi ovrwtch";
+    }
+    .highlight1 {
+        grid-area: highlight1;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/WoWimg.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .wowdesc {
+        grid-area: wow;
+        margin: 0 10px 0 10px;
+    }
+    .highlight2 {
+        grid-area: highlight2;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/Kenshiimg.png);
+        background-size: cover;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .kenshidesc {
+        grid-area: kenshi;
+        margin: 0 10px 0 10px;
+    }
+    .highlight3 {
+        grid-area: highlight3;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/LoLimg.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .loldesc {
+        grid-area: lol;
+        margin: 0 10px 0 10px;
+    }
+    .highlight4 {
+        grid-area: highlight4;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/Overwatchimg.jpg);
+        background-size: cover;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .overwatchdesc {
+        grid-area: ovrwtch;
+        margin: 0 10px 0 10px;
+    }
+    .caption2 {
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        margin-bottom: -1px;
+        text-shadow: 2px 2px 5px grey;
+    }
+    .container2 {
+        margin-left: 1px;
+        display: grid;
+        grid-template-rows: 90px 90px 90px 90px 90px; 
+        grid-template-columns: calc(100% / 4) calc(100% / 4 * 3);
+        grid-template-areas: 
+            "fps label1"
+            "hns label2"
+            "rogue label3"
+            "sim label4"
+            "survival label5";
+        text-align: left;
+    }
+    .fps {
+        grid-area: fps;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label1 {   
+        grid-area: label1;   
+        background-image: url(../images/FPSbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 3px 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 15px 15px 0 0;
+    }
+    .hacknslash {
+        grid-area: hns;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label2 {
+        grid-area: label2;
+        background-image: url(../images/HnSbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .rogue {
+        grid-area: rogue;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label3 {
+        grid-area: label3;
+        background-image: url(../images/Roguelikebanner.png);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .simulation {
+        grid-area: sim;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label4 {
+        grid-area: label4;
+        background-image: url(../images/Simbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .survival {
+        grid-area: survival;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label5 {
+        grid-area: label5;   
+        background-image: url(../images/Survivalbanner.jpg);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 3px 0 3px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 0 0 15px 15px;
+    }
+    .caption3 {
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .container3 {
+        display: grid;
+        grid-template-rows:; 
+        grid-template-columns:;
+        grid-template-areas: 
+            "description";
+        text-align: left;
+        background-color: white;
+        box-shadow: 1px 1px 5px grey;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0 10px 25px 10px;
+    }
+    .condesc {
+        grid-area: description;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .request {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
+    }
 }
 /* Desktops */
 @media screen and (min-width: 1200px) {
-    .mobile-header {
-        background-image: url(../images/headerback.png);
-        background-size: cover;
+    .container {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "mainfooter";
     }
-	.container1 {
-        border: 1px solid black;
+    .footer {
+        grid-area: mainfooter;
+    }
+    /*class from main css file: end*/
+    .caption1 {
+        margin-top: 200px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 10px;
+        margin-bottom: -1px;
+    }
+    .container1 {
+        display: grid;
+        grid-template-rows: 300px 110px 300px 80px; 
+        grid-template-columns: 50% 50%;
+        grid-template-areas: 
+            "highlight1 highlight3"
+            "wow lol"
+            "highlight2 highlight4"
+            "kenshi ovrwtch";
     }
     .highlight1 {
-        border: 1px solid black;
+        grid-area: highlight1;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/WoWimg.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .wowdesc {
+        grid-area: wow;
+        margin: 0 10px 0 10px;
     }
     .highlight2 {
-        border: 1px solid black;
+        grid-area: highlight2;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/Kenshiimg.png);
+        background-size: cover;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .kenshidesc {
+        grid-area: kenshi;
+        margin: 0 10px 0 10px;
     }
     .highlight3 {
-        border: 1px solid black;
+        grid-area: highlight3;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/LoLimg.jpg);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .loldesc {
+        grid-area: lol;
+        margin: 0 10px 0 10px;
     }
     .highlight4 {
-        border: 1px solid black;
+        grid-area: highlight4;
+        margin: 2px;
+        justify-content: center;
+        background-image: url(../images/Overwatchimg.jpg);
+        background-size: cover;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 10px;
+    }
+    .overwatchdesc {
+        grid-area: ovrwtch;
+        margin: 0 10px 0 10px;
+    }
+    .captioncontainer {
+        display: grid;
+        grid-template-rows: 80px;
+        grid-template-columns: calc(100% / 3 * 2) calc(100% / 3);
+        grid-template-areas: 
+            "caption2 caption3";
+        margin-top: 30px;
+    }
+    .caption2 {
+        grid-area: caption2;
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+    .caption3 {
+        grid-area: caption3;
+        margin-top: 25px;
+        font-size: 30px;
+        font-weight: bold;
+        text-align: center;
+        color: black;
+        padding: 10px;
+    }
+    .container2 {
+        width: calc(100% / 3 * 2);
+        display: grid;
+        grid-template-rows:90px 90px 90px 90px 90px; 
+        grid-template-columns: calc(100% / 4) calc(100% / 4 * 3);
+        grid-template-areas:
+            "fps label1"
+            "hns label2"
+            "rogue label3"
+            "sim label4"
+            "survival label5";
+        text-align: left;
+    }
+    .flexwrapcontainer2content {
+        display: flex;
+        justify-content: center;
+    }
+    .fps {
+        grid-area: fps;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label1 {   
+        grid-area: label1;   
+        background-image: url(../images/FPSbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 3px 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 15px 15px 0 0;
+    }
+    .hacknslash {
+        grid-area: hns;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label2 {
+        grid-area: label2;
+        background-image: url(../images/HnSbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .rogue {
+        grid-area: rogue;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label3 {
+        grid-area: label3;
+        background-image: url(../images/Roguelikebanner.png);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .simulation {
+        grid-area: sim;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label4 {
+        grid-area: label4;
+        background-image: url(../images/Simbanner.jpg);
+        background-size: cover;
+        background-position: center;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
+    }
+    .survival {
+        grid-area: survival;
+        font-weight: bold;
+        text-decoration: underline;
+        font-size: 20px;
+        text-align: center;
+        margin: 10px 0 10px 0;
+        border-radius: 10px 0 0 10px;
+        padding-top: 25px;
+        background-color: black;
+        color: white;
+    }
+    .label5 {
+        grid-area: label5;   
+        background-image: url(../images/Survivalbanner.jpg);
+        background-size: cover;
+        background-position: center top;
+        margin: 0 3px 0 3px;
+        box-shadow: 1px 1px 5px black;
+        border-radius: 0 0 15px 15px;
+    }
+    .container3 {
+        display: grid;
+        grid-template-rows:; 
+        grid-template-columns:;
+        grid-template-areas: 
+            "description";
+        text-align: left;
+        background-color: white;
+        box-shadow: 1px 1px 5px grey;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0 10px 25px 10px;
+    }
+    .condesc {
+        grid-area: description;
+        color: black;
+        font-weight: bold;
+        font-size: 20px;
+        margin: 10px;
+        text-align: center;
+    }
+    .request {
+        text-decoration: underline;
+        text-align: center;
+        font-size: 30px;
+        margin: 20px;
     }
 }
