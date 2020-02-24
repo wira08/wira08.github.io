@@ -148,18 +148,7 @@ h2{
   padding: 10px;
 }
 
-
 .row{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.column{
-  width: 50%;
-}
-
-/*.row{
   display: flex;
   flex-wrap: wrap;
   
@@ -167,7 +156,7 @@ h2{
 .row>.column{
   flex: 0 50%;
   box-sizing: border-box;
-}*/
+}
 
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
