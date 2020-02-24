@@ -259,6 +259,11 @@ label.sticky{
 	top: 0;
 	z-index: 2;
 	background-color: #000000;
+	background-image: url(https://images.unsplash.com/photo-1550982030-7c1af41addbc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    /*background-attachment: fixed;*/
 
 	/*add the animation*/
 	transition: width 0.3s, height 0.3s, margin 0.3s;
