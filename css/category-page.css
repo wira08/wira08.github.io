@@ -17,7 +17,7 @@
     }
     .container1 {
         display: grid;
-        grid-template-rows: 200px 125px 200px 225px 200px 125px; 
+        grid-template-rows: 200px 125px 200px 240px 200px 115px; 
         grid-template-columns: 50% 50%;
         grid-template-areas: 
             "highlight1 highlight1"
@@ -26,7 +26,6 @@
             "kenshi lol"
             "highlight4 highlight4"
             "ovrwtch ovrwtch";
-        border-radius: 0 0 15px 15px;
     }
     .highlight1 {
         grid-area: highlight1;
@@ -39,6 +38,7 @@
     }
     .wowdesc {
         grid-area: wow;
+        margin: 0 10px 0 10px;
     }
     .highlight2 {
         grid-area: highlight2;
@@ -50,6 +50,7 @@
     }
     .kenshidesc {
         grid-area: kenshi;
+        margin: 0 10px 0 10px;
     }
     .highlight3 {
         grid-area: highlight3;
@@ -62,6 +63,7 @@
     }
     .loldesc {
         grid-area: lol;
+        margin: 0 10px 0 10px;
     }
     .highlight4 {
         grid-area: highlight4;
@@ -73,6 +75,7 @@
     }
     .overwatchdesc {
         grid-area: ovrwtch;
+        margin: 0 10px 0 10px;
     }
     .caption2 {
         margin-top: 25px;
@@ -246,209 +249,212 @@
     body {
         background-color: rgb(216,216,216);
     }
-    .container {
-        display: grid;
-        grid-template-rows: auto;
-        grid-template-columns: 100%;
-        grid-template-areas: 
-            "footer-main";
-        border: 1px solid black;
-    }
-    .footer {
-        grid-area: footer-main;
-    }
     .caption1 {
-        margin-top: 225px;
+        margin-top: 200px;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        border: 4px solid black;
         color: black;
-        background-color: rgb(143,0,255);
-        border-radius: 50px 50px 0 0;
         padding: 10px;
         margin-bottom: -1px;
+        text-shadow: 2px 2px 5px grey;
     }
     .container1 {
-        border: 1px solid black;
         display: grid;
-        grid-template-rows: 250px 200px 200px; 
+        grid-template-rows: 200px 150px 200px 110px; 
         grid-template-columns: 50% 50%;
         grid-template-areas: 
-            "highlight1 highlight1"
-            "highlight2 highlight3"
-            "highlight4 highlight4";
-        background-color: black;
-        border-radius: 0 0 15px 15px;
-        padding-bottom: 15px;
+            "highlight1 highlight3"
+            "wow lol"
+            "highlight2 highlight4"
+            "kenshi ovrwtch";
     }
     .highlight1 {
         grid-area: highlight1;
-        border: 1px solid black;
         margin: 2px;
         justify-content: center;
         background-image: url(../images/WoWimg.jpg);
         background-size: cover;
         background-position: center;
+        box-shadow: 1px 1px 5px black;
+    }
+    .wowdesc {
+        grid-area: wow;
+        margin: 0 10px 0 10px;
     }
     .highlight2 {
         grid-area: highlight2;
-        border: 1px solid black;
         margin: 2px;
         justify-content: center;
         background-image: url(../images/Kenshiimg.png);
         background-size: cover;
+        box-shadow: 1px 1px 5px black;
+    }
+    .kenshidesc {
+        grid-area: kenshi;
+        margin: 0 10px 0 10px;
     }
     .highlight3 {
         grid-area: highlight3;
-        border: 1px solid black;
         margin: 2px;
         justify-content: center;
         background-image: url(../images/LoLimg.jpg);
         background-size: cover;
         background-position: center;
+        box-shadow: 1px 1px 5px black;
+    }
+    .loldesc {
+        grid-area: lol;
+        margin: 0 10px 0 10px;
     }
     .highlight4 {
         grid-area: highlight4;
-        border: 1px solid black;
         margin: 2px;
         justify-content: center;
         background-image: url(../images/Overwatchimg.jpg);
         background-size: cover;
+        box-shadow: 1px 1px 5px black;
+    }
+    .overwatchdesc {
+        grid-area: ovrwtch;
+        margin: 0 10px 0 10px;
     }
     .caption2 {
         margin-top: 25px;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        border: 4px solid black;
         color: black;
-        background-color: rgb(143,0,255);
-        border-radius: 50px 50px 0 0;
         padding: 10px;
         margin-bottom: -1px;
+        text-shadow: 2px 2px 5px grey;
     }
     .container2 {
-        border: 1px solid black;
         display: grid;
-        grid-template-rows: 75px 75px 75px 75px 75px; 
-        grid-template-columns: 100%;
+        grid-template-rows: 90px 90px 90px 90px 90px; 
+        grid-template-columns: calc(100% / 4) calc(100% / 4 * 3);
         grid-template-areas: 
-            "label1"
-            "label2"
-            "label3"
-            "label4"
-            "label5";
+            "fps label1"
+            "hns label2"
+            "rogue label3"
+            "sim label4"
+            "survival label5";
         text-align: left;
-        background-color: black;
-        border-radius: 0 0 15px 15px;
-        padding-bottom: 15px;
     }
-    .label1 {
+    .fps {
+        grid-area: fps;
         font-weight: bold;
         text-decoration: underline;
-        grid-area: label1;
         font-size: 20px;
-        color: rgb(4,180,134);
+        text-align: center;
+        margin-top: 30px;
+    }
+    .label1 {   
+        grid-area: label1;   
         background-image: url(../images/FPSbanner.jpg);
         background-size: cover;
         background-position: center;
-        margin: 0 3px 0 3px;
+        margin: 3px 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
     }
-    .label2 {
+    .hacknslash {
+        grid-area: hns;
         font-weight: bold;
         text-decoration: underline;
-        grid-area: label2;
         font-size: 20px;
-        color: rgb(4,180,134);
+        text-align: center;
+        margin-top: 30px;
+    }
+    .label2 {
+        grid-area: label2;
         background-image: url(../images/HnSbanner.jpg);
         background-size: cover;
         background-position: center;
-        margin: 0 3px 0 3px;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
     }
-    .label3 {
+    .rogue {
+        grid-area: rogue;
         font-weight: bold;
         text-decoration: underline;
-        grid-area: label3;
         font-size: 20px;
-        color: rgb(4,180,134);
+        text-align: center;
+        margin-top: 30px;
+    }
+    .label3 {
+        grid-area: label3;
         background-image: url(../images/Roguelikebanner.png);
         background-size: cover;
         background-position: center top;
-        margin: 0 3px 0 3px;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
     }
-    .label4 {
+    .simulation {
+        grid-area: sim;
         font-weight: bold;
         text-decoration: underline;
-        grid-area: label4;
         font-size: 20px;
-        color: rgb(4,180,134);
+        text-align: center;
+        margin-top: 25px;
+    }
+    .label4 {
+        grid-area: label4;
         background-image: url(../images/Simbanner.jpg);
         background-size: cover;
         background-position: center;
-        margin: 0 3px 0 3px;
+        margin: 0 3px 5px 3px;
+        box-shadow: 1px 1px 5px black;
     }
-    .label5 {
+    .survival {
+        grid-area: survival;
         font-weight: bold;
         text-decoration: underline;
-        grid-area: label5;
         font-size: 20px;
-        color: rgb(4,180,134);
+        text-align: center;
+        margin-top: 25px;
+    }
+    .label5 {
+        grid-area: label5;   
         background-image: url(../images/Survivalbanner.jpg);
         background-size: cover;
         background-position: center top;
         margin: 0 3px 0 3px;
+        box-shadow: 1px 1px 5px black;
     }
     .caption3 {
         margin-top: 25px;
         font-size: 30px;
         font-weight: bold;
         text-align: center;
-        border: 4px solid black;
         color: black;
-        background-color: rgb(143,0,255);
         padding: 10px;
         margin-bottom: -1px;
     }
     .container3 {
-        border: 1px solid black;
         display: grid;
         grid-template-rows:; 
         grid-template-columns:;
         grid-template-areas: 
             "description";
         text-align: left;
-        background-color: black;
-        border-radius: 0 0 15px 15px;
-        margin-bottom: 25px;
+        background-color: white;
+        box-shadow: 1px 1px 5px grey;
+        border-radius: 15px 15px 15px 15px;
+        margin: 0 10px 25px 10px;
     }
     .condesc {
         grid-area: description;
-        color: white;
+        color: black;
+        font-weight: bold;
         font-size: 20px;
         margin: 10px;
+        text-align: center;
     }
     .request {
-        color: rgb(4,180,134);
         text-decoration: underline;
         text-align: center;
         font-size: 30px;
         margin: 20px;
-    }
-    .footer {
-        background-color: rgb(66,66,66);
-    }
-    .footer-box1 {
-        background-color: rgb(208,169,245);
-    }
-    .footer-box2 {
-        background-color: rgb(208,169,245);
-    }
-    .footer-box3 {
-        background-color: rgb(208,169,245);
-    }
-    .footer-box4 {
-        background-color: rgb(208,169,245);
     }
 }
 /* Laptops */
