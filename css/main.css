@@ -49,15 +49,15 @@ li {
 	color: #8f00ff;
 }
 
-p {
+/*p {
 	color: #000000;
-}
+}*/
 
 
 /*header icons*/
 .fa-shopping-cart, .fa-user {
 	font-size: 35px;
-	color: ##FFFFFF;
+	color: #FFFFFF;
 }
 /*header icons ends*/
 
@@ -272,7 +272,7 @@ label.sticky{
 	height: 200px;
 	top: 0;
 	z-index: 2;
-	background-color: red;
+	background-color: #000000;
 
 	/*add the animation*/
 	transition: width 0.3s, height 0.3s, margin 0.3s;
@@ -357,7 +357,7 @@ label.sticky{
 /*footer socials*/
 .fa-facebook, .fa-instagram, .fa-twitter {
 	font-size: 30px;
-	color: #000000;
+	color: #FFFFFF;
 }
 
 .fa:hover {
@@ -506,7 +506,7 @@ label.sticky{
 		display: block;
 		height: 5px;
 		width: 40px;
-		background: rgb(0, 0, 0);
+		background: #FFFFFF;
 
 		/*add the animation*/
 		transition: margin 0.3s;
@@ -560,7 +560,7 @@ label.sticky{
 		top: 0;
 		/*opacity: 0.8;*/
 		z-index: 100;
-		background-color: #b10000;
+		background-color: #000000;
 
 		/*add the animation*/
 		transition: margin 0.3s;
@@ -572,7 +572,6 @@ label.sticky{
 		list-style: none;
 		align-items: center;
 		flex-direction: column;
-		/*margin-top: -50px;*/
 	}
 
 	.nav-list {
