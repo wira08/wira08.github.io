@@ -42,7 +42,7 @@ li {
 	transition-duration: 0.5s;
 }
 .nav-list li a {
-	color: black;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 .nav-list li a:hover {
@@ -57,7 +57,7 @@ p {
 /*header icons*/
 .fa-shopping-cart, .fa-user {
 	font-size: 35px;
-	color: #000000;
+	color: ##FFFFFF;
 }
 /*header icons ends*/
 
@@ -211,7 +211,6 @@ div,
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 	transform: scale(0.95);
 	transition:all .3s;
-	/*opacity: 0.8;*/
 	cursor:pointer;
 }
 
@@ -220,7 +219,6 @@ div,
 .lol-profile:hover,
 .overwatch-profile:hover {
 	transform: scale(1);
-	/*opacity: 1;*/
 	box-shadow: 0 37.125px 70px -12.125px rgba(0,0,0,0.2);
 }
 .game-card-body{
@@ -363,7 +361,7 @@ label.sticky{
 }
 
 .fa:hover {
-	color: #1877f2;
+	color: #8f00ff;
 }
 /*footer socials end*/
 
