@@ -82,7 +82,7 @@ a:hover{
 
 .vl {
 	border-left: 1px solid black;
-	height: 50px;
+	height: 80px;
 }
 
 /*front page coach cards*/
@@ -276,6 +276,7 @@ label.sticky{
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 200px;
+	border-bottom: 1px solid;
 }
 .game1,
 .game2,
