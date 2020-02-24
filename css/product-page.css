@@ -50,10 +50,6 @@ h2{
   max-width: 100%;
 }
 
-.column{
-  margin: 20px;
-}
-
 .row{
   display: flex;
   justify-content: space-around;
@@ -65,6 +61,8 @@ h2{
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
   width: 280px;
+  margin: 5px;
+  border-radius: 10px;
   
 }
 
@@ -150,23 +148,21 @@ h2{
   height: 100px;
 }
 
-.column{
-  padding: 10px;
-}
-
 .row{
   display: flex;
   flex-wrap: wrap;
   
 }
-.row>.column{
-  flex: 0 50%;
+.row>.product-card{
   box-sizing: border-box;
 }
 
 .product-card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   text-align: center;
+  flex: 1 1 290px;
+  margin: 10px 15px;
+  border-radius: 10px;
 }
 
 h1{
@@ -202,7 +198,7 @@ h1{
 @media screen and (max-width: 1200px) and (min-width: 960px)  {
 /*Section*/
 .col-1 {
-  float: left;
+  float: left;    
   width: 50%;
   height:350px;
   background-image: url('../images/sinatraa.jpg');
@@ -251,11 +247,7 @@ h2{
   max-width: 100%;
 }
 
-.column {
-  width: 260px;
-  flex: 1 1 190px;
-  margin: 10px 3px;
-}
+
 
 .row{
   display: flex;
@@ -270,6 +262,9 @@ h2{
   text-align: center;
   width: 260px;
   height: 370px;
+  flex: 1 1 190px;
+  margin: 10px 7px;
+  border-radius: 10px;
 }
 
 h1{
@@ -354,11 +349,6 @@ h2{
   width: 100%;
 }
 
-.column {
-  padding: 10px;
-  height: 425px; 
-}
-
 .row{
   display: flex;
   justify-content: space-evenly;
@@ -370,6 +360,9 @@ h2{
   text-align: center;
   height: 375px;
   width: 290px;
+  flex: 1 1 190px;
+  margin: 10px 10px;
+  border-radius: 10px;
 }
 
 h1{
