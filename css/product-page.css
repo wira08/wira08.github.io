@@ -341,12 +341,7 @@ h2{
 }
 
 .bio{
-  position: absolute;
-  top: 510px;
-  right: 303px;
-  color: #ffffff;
-  font-size: 18px;
-  text-shadow: 2px 2px #8f00ff;
+  display: none;
 }
 /*Section*/
 
