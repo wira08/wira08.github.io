@@ -314,46 +314,32 @@ label.sticky{
 }
 
 .footer {
-	text-align: center;
 	grid-area: footer;
+	text-align: center;
+	background-color: #000000;
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
 	grid-template-areas: "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4";
 }
 
-/*
-	.footer {
-        background-color: black;
-    }
-    .footer-box1 {
-        color: white;
-    }
-    .footer-box1 a {
-        color: white;
-        text-decoration: underline;
-    }
-    .footer-box2 {
-        color: white;
-    }
-    .footer-box2 a {
-        color: white;
-        text-decoration: underline;
-    }
-    .footer-box3 {
-        color: white;
-    }
-    .footer-box3 a {
-        color: white;
-        text-decoration: underline;
-    }
-    .footer-box4 {
-        color: white;
-    }
-    .footer-box4 p {
-        color: white;
-    }
-*/
+.footer-box1,
+.footer-box2,
+.footer-box3,
+.footer-box4 {
+	color: white;
+}
+
+.footer-box1 a,
+.footer-box2 a {
+	color: white;
+}
+
+.footer-box1 a:hover,
+.footer-box2 a:hover {
+	color: #8f00ff;
+}
+
 
 .footer-box1 {
 	grid-area: i1;
