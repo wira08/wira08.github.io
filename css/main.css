@@ -42,22 +42,22 @@ li {
 	transition-duration: 0.5s;
 }
 .nav-list li a {
-	color: black;
+	color: #FFFFFF;
 	text-decoration: none;
 }
 .nav-list li a:hover {
 	color: #8f00ff;
 }
 
-p {
+/*p {
 	color: #000000;
-}
+}*/
 
 
 /*header icons*/
 .fa-shopping-cart, .fa-user {
 	font-size: 35px;
-	color: #000000;
+	color: #FFFFFF;
 }
 /*header icons ends*/
 
@@ -211,7 +211,6 @@ div,
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 	transform: scale(0.95);
 	transition:all .3s;
-	/*opacity: 0.8;*/
 	cursor:pointer;
 }
 
@@ -220,7 +219,6 @@ div,
 .lol-profile:hover,
 .overwatch-profile:hover {
 	transform: scale(1);
-	/*opacity: 1;*/
 	box-shadow: 0 37.125px 70px -12.125px rgba(0,0,0,0.2);
 }
 .game-card-body{
@@ -274,7 +272,7 @@ label.sticky{
 	height: 200px;
 	top: 0;
 	z-index: 2;
-	background-color: red;
+	background-color: #000000;
 
 	/*add the animation*/
 	transition: width 0.3s, height 0.3s, margin 0.3s;
@@ -316,13 +314,32 @@ label.sticky{
 }
 
 .footer {
-	text-align: center;
 	grid-area: footer;
+	text-align: center;
+	background-color: #000000;
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
 	grid-template-rows: auto;
 	grid-template-areas: "i1 i1 i1 i2 i2 i2 i3 i3 i3 i4 i4 i4";
 }
+
+.footer-box1,
+.footer-box2,
+.footer-box3,
+.footer-box4 {
+	color: white;
+}
+
+.footer-box1 a,
+.footer-box2 a {
+	color: white;
+}
+
+.footer-box1 a:hover,
+.footer-box2 a:hover {
+	color: #8f00ff;
+}
+
 
 .footer-box1 {
 	grid-area: i1;
@@ -359,11 +376,11 @@ label.sticky{
 /*footer socials*/
 .fa-facebook, .fa-instagram, .fa-twitter {
 	font-size: 30px;
-	color: #000000;
+	color: #FFFFFF;
 }
 
 .fa:hover {
-	color: #1877f2;
+	color: #8f00ff;
 }
 /*footer socials end*/
 
@@ -516,7 +533,7 @@ label.sticky{
 		display: block;
 		height: 5px;
 		width: 40px;
-		background: rgb(0, 0, 0);
+		background: #FFFFFF;
 
 		/*add the animation*/
 		transition: margin 0.3s;
@@ -570,7 +587,7 @@ label.sticky{
 		top: 0;
 		/*opacity: 0.8;*/
 		z-index: 100;
-		background-color: #b10000;
+		background-color: #000000;
 
 		/*add the animation*/
 		transition: margin 0.3s;
@@ -582,7 +599,6 @@ label.sticky{
 		list-style: none;
 		align-items: center;
 		flex-direction: column;
-		/*margin-top: -50px;*/
 	}
 
 	.nav-list {
