@@ -11,10 +11,8 @@ Vi erbjuder målgruppen ”FPS spelare”  Coaching och även andra spel kategor
 
 
 **website test version:**
-
-[G-focus test page](wira08.github.io/).
+[G-focus test page](wira08.github.io/)
 
 
 **Bootstrap version:**
-
 https://github.com/MattiasKallstrom/G-Focus-Bootstrap
