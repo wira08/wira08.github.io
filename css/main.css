@@ -177,6 +177,10 @@ a:hover{
 	justify-content: space-evenly;
 	align-items: baseline;
 	text-align: center;
+	box-shadow: 1px 1px 5px grey;
+	margin: 0 10px;
+	border-radius: 10px;
+	padding-top: 17px;
 }
 /*front page how it work section end*/
 
@@ -281,7 +285,7 @@ label.sticky{
 	justify-content: space-around;
 	align-items: center;
 	margin-top: 200px;
-	border-bottom: 1px solid;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
 }
 .game1,
 .game2,
@@ -308,6 +312,7 @@ label.sticky{
 .footer {
 	grid-area: footer;
 	text-align: center;
+	margin-top: 65px;
 	background-color: #000000;
 	display:grid;
 	grid-template-columns: repeat(12, 1fr);
@@ -325,6 +330,7 @@ label.sticky{
 .footer-box1 a,
 .footer-box2 a {
 	color: white;
+	text-decoration: none;
 }
 
 .footer-box1 a:hover,
@@ -335,30 +341,25 @@ label.sticky{
 
 .footer-box1 {
 	grid-area: i1;
-	margin: 5px;
+	margin: 30px 5px;
 	border-right: 1px solid;
-}
-
-.footer-box1, a {
-	text-decoration: none;
-
 }
 
 .footer-box2 {
 	grid-area: i2;
-	margin: 5px;
+	margin: 30px 5px;
 	border-right: 1px solid;
 }
 
 .footer-box3 {
 	grid-area: i3;
-	margin: 5px;
+	margin: 30px 5px;
 	border-right: 1px solid;
 }
 
 .footer-box4 {
 	grid-area: i4;
-	margin: 5px;
+	margin: 30px 5px;
 }
 
 .social {
@@ -366,6 +367,9 @@ label.sticky{
 	display: flex;
 	align-content: center;
 	flex-direction: column;
+}
+.social a {
+	margin: 5px 0;
 }
 
 /*footer socials*/
@@ -484,6 +488,7 @@ label.sticky{
 	.footer-box3 {
 		border-right: none;
 		border-bottom: 1px solid;
+		margin: 5px 40px;
 	}
 	.box1 {
 		margin-top: 200px;
