@@ -1,0 +1,522 @@
+@import 'main.css';
+/* Phones */
+@media screen and (max-width: 768px) {
+	.pagetitle {
+		margin-top: 225px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.informationcontainer {
+		display: grid;
+		grid-template-rows: 50px 125px;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"address time"
+			". time";
+		margin-bottom: 10px;
+	}
+	.address {
+		grid-area: address;
+		padding: 15px 10px 10px 10px;
+		margin: 0 5px 0 5px;
+		text-align: center;
+		border-radius: 15px;
+		color: white;
+		background-color: black;
+	}
+	.time {
+		grid-area: time;
+		text-align: center;
+		padding: 10px;
+		margin: 0 5px 0 5px;
+		border-radius: 15px 15px 15px 15px;
+		color: white;
+		background-color: black;
+	}
+	.contactformtitle {
+		font-size: 22px;
+		font-weight: bold;
+		margin: 5px 15px 0 15px;
+		padding: 10px 5px 10px 5px;
+		text-align: center;
+		color: white;
+		background-color: black;
+		border-radius: 15px 15px 0 0;
+	}
+	.contactcontainer {
+		display: grid;
+		grid-template-rows: 50px 50px 50px 150px 10px 30px;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-areas: 
+			"name nameinput nameinput nameinput"
+			"email emailinput emailinput emailinput"
+			"topic topicinput topicinput topicinput"
+			"message messageinput messageinput messageinput"
+			". . . ."
+			". send reset .";
+		padding: 25px 5px 25px 5px;
+		box-shadow: 1px 1px 10px grey; 
+		margin: 0 5px 0 5px;
+	}
+	.contactname {
+		grid-area: name;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.nameinput {
+		grid-area: nameinput;
+		border-radius: 10px;
+	}
+	.contactemail {
+		grid-area: email;
+		margin-top: 15px;
+		text-align: center;
+	}	
+	.emailinput {
+		grid-area: emailinput;
+		border-radius: 10px;
+	}
+	.contacttopic {
+		grid-area: topic;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.topicinput {
+		grid-area: topicinput;
+		border-radius: 10px;
+	}
+	.contactmessage {
+		grid-area: message;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.messageinput {
+		grid-area: messageinput;
+		border-radius: 10px;
+	}
+	.sendbutton {
+		grid-area: send;
+		margin-right: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.sendbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+	.resetbutton {
+		grid-area: reset;
+		margin-left: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.resetbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+}
+/* Tablets */
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+	/*class from main css file: begin*/
+    .container {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "mainfooter";
+    }
+    .footer {
+        grid-area: mainfooter;
+    }
+    /*class from main css file: end*/
+	.pagetitle {
+		margin-top: 225px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.informationcontainer {
+		display: grid;
+		grid-template-rows: 50px 115px;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"address time"
+			". time";
+		margin-bottom: 10px;
+	}
+	.address {
+		grid-area: address;
+		padding: 15px 10px 10px 10px;
+		margin: 0 5px 0 5px;
+		text-align: center;
+		border-radius: 15px;
+		color: white;
+		background-color: black;
+	}
+	.time {
+		grid-area: time;
+		text-align: center;
+		padding: 10px;
+		margin: 0 5px 0 5px;
+		border-radius: 15px 15px 15px 15px;
+		color: white;
+		background-color: black;
+	}
+	.contactformtitle {
+		font-size: 22px;
+		font-weight: bold;
+		margin: 5px 75px 0 75px;
+		padding: 10px 5px 10px 5px;
+		text-align: center;
+		color: white;
+		background-color: black;
+		border-radius: 15px 15px 0 0;
+	}
+	.contactcontainer {
+		display: grid;
+		grid-template-rows: 50px 50px 50px 150px 10px 25px;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-areas: 
+			"name nameinput nameinput nameinput"
+			"email emailinput emailinput emailinput"
+			"topic topicinput topicinput topicinput"
+			"message messageinput messageinput messageinput"
+			". . . ."
+			". send reset .";
+		padding: 25px 0 25px 0;
+		box-shadow: 1px 1px 10px grey; 
+		margin: 0 15px 0 15px;
+	}
+	.contactname {
+		grid-area: name;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.nameinput {
+		grid-area: nameinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contactemail {
+		grid-area: email;
+		margin-top: 15px;
+		text-align: center;
+	}	
+	.emailinput {
+		grid-area: emailinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contacttopic {
+		grid-area: topic;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.topicinput {
+		grid-area: topicinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contactmessage {
+		grid-area: message;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.messageinput {
+		grid-area: messageinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.sendbutton {
+		grid-area: send;
+		margin-right: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.sendbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+	.resetbutton {
+		grid-area: reset;
+		margin-left: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.resetbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+}
+/* Laptops */
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+	/*class from main css file: begin*/
+    .container {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "mainfooter";
+    }
+    .footer {
+        grid-area: mainfooter;
+    }
+    /*class from main css file: end*/
+	.pagetitle {
+		margin-top: 225px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.informationcontainer {
+		display: grid;
+		grid-template-rows: 50px 115px;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"address time"
+			". time";
+		margin-bottom: 10px;
+	}
+	.address {
+		grid-area: address;
+		padding: 15px 10px 10px 10px;
+		margin: 0 5px 0 5px;
+		text-align: center;
+		border-radius: 15px;
+		color: white;
+		background-color: black;
+	}
+	.time {
+		grid-area: time;
+		text-align: center;
+		padding: 10px;
+		margin: 0 5px 0 5px;
+		border-radius: 15px 15px 15px 15px;
+		color: white;
+		background-color: black;
+	}
+	.contactformtitle {
+		font-size: 22px;
+		font-weight: bold;
+		margin: 5px 150px 0 150px;
+		padding: 10px 5px 10px 5px;
+		text-align: center;
+		color: white;
+		background-color: black;
+		border-radius: 15px 15px 0 0;
+	}
+	.contactcontainer {
+		display: grid;
+		grid-template-rows: 50px 50px 50px 150px 10px 25px;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-areas: 
+			"name nameinput nameinput nameinput"
+			"email emailinput emailinput emailinput"
+			"topic topicinput topicinput topicinput"
+			"message messageinput messageinput messageinput"
+			". . . ."
+			". send reset .";
+		padding: 25px 0 25px 0;
+		box-shadow: 1px 1px 10px grey; 
+		margin: 0 30px 0 30px;
+	}
+	.contactname {
+		grid-area: name;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.nameinput {
+		grid-area: nameinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contactemail {
+		grid-area: email;
+		margin-top: 15px;
+		text-align: center;
+	}	
+	.emailinput {
+		grid-area: emailinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contacttopic {
+		grid-area: topic;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.topicinput {
+		grid-area: topicinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contactmessage {
+		grid-area: message;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.messageinput {
+		grid-area: messageinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.sendbutton {
+		grid-area: send;
+		margin-right: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.sendbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+	.resetbutton {
+		grid-area: reset;
+		margin-left: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.resetbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+}
+/* Desktops */
+@media screen and (min-width: 1200px) {
+	/*class from main css file: begin*/
+    .container {
+        grid-template-rows: auto;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            "mainfooter";
+    }
+    .footer {
+        grid-area: mainfooter;
+    }
+    /*class from main css file: end*/
+	.pagetitle {
+		margin-top: 225px;
+		font-size: 30px;
+		font-weight: bold;
+		text-align: center;
+	}
+	.informationcontainer {
+		display: grid;
+		grid-template-rows: 50px 115px;
+		grid-template-columns: 50% 50%;
+		grid-template-areas: 
+			"address time"
+			". time";
+		margin-bottom: 10px;
+	}
+	.address {
+		grid-area: address;
+		padding: 15px 10px 10px 10px;
+		margin: 0 5px 0 5px;
+		text-align: center;
+		border-radius: 15px;
+		color: white;
+		background-color: black;
+	}
+	.time {
+		grid-area: time;
+		text-align: center;
+		padding: 10px;
+		margin: 0 5px 0 5px;
+		border-radius: 15px 15px 15px 15px;
+		color: white;
+		background-color: black;
+	}
+	.contactformtitle {
+		font-size: 22px;
+		font-weight: bold;
+		margin: 5px 250px 0 250px;
+		padding: 10px 5px 10px 5px;
+		text-align: center;
+		color: white;
+		background-color: black;
+		border-radius: 15px 15px 0 0;
+	}
+	.contactcontainer {
+		display: grid;
+		grid-template-rows: 50px 50px 50px 150px 10px 25px;
+		grid-template-columns: 25% 25% 25% 25%;
+		grid-template-areas: 
+			"name nameinput nameinput nameinput"
+			"email emailinput emailinput emailinput"
+			"topic topicinput topicinput topicinput"
+			"message messageinput messageinput messageinput"
+			". . . ."
+			". send reset .";
+		padding: 25px 0 25px 0;
+		box-shadow: 1px 1px 10px grey; 
+		margin: 0 50px 0 50px;
+	}
+	.contactname {
+		grid-area: name;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.nameinput {
+		grid-area: nameinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contactemail {
+		grid-area: email;
+		margin-top: 15px;
+		text-align: center;
+	}	
+	.emailinput {
+		grid-area: emailinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contacttopic {
+		grid-area: topic;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.topicinput {
+		grid-area: topicinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.contactmessage {
+		grid-area: message;
+		margin-top: 15px;
+		text-align: center;
+	}
+	.messageinput {
+		grid-area: messageinput;
+		border-radius: 10px;
+		margin-right: 50px;
+	}
+	.sendbutton {
+		grid-area: send;
+		margin-right: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.sendbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+	.resetbutton {
+		grid-area: reset;
+		margin-left: 25px;
+		color: white;
+		background-color: black;
+		border: none;
+	}
+	.resetbutton:hover {
+		border: 3px solid rgb(143,0,255);
+		border-radius: 15px;
+	}
+}
