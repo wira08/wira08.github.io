@@ -2,7 +2,7 @@
 A website for game coaching. We teach noobs how to become pro. 
 
 
-Gaming Coaching/Guides
+## Gaming Coaching/Guides
 
 
 Vi erbjuder gaming coach tjänster för folk som vill bli bättre på spel, 
@@ -10,9 +10,11 @@ Inspirationen med namnet kommer ifrån G Fuel och det är ett kosttillskott som 
 Vi erbjuder målgruppen ”FPS spelare”  Coaching och även andra spel kategorier.
 
 
-website test version:
-wira08.github.io
+**website test version:**
+
+[G-focus test page](wira08.github.io/).
 
 
-Bootstrap version:
+**Bootstrap version:**
+
 https://github.com/MattiasKallstrom/G-Focus-Bootstrap
