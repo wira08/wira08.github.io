@@ -1,0 +1,329 @@
+@import "main.css";
+
+
+
+
+
+.cart:hover {
+    display: block!important;
+}
+.cart-header {
+    display:none;
+    margin: 15px 0;
+    float: right;
+    background: rgb(225, 214, 228);
+    width:330px;
+    position: relative;
+    border-radius: 3px;
+    padding:20px;
+}
+
+.cart-header:after {
+	bottom: 100%;
+	left: 90%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: white;
+	border-width: 8px;
+    margin-left: -8
+}
+
+
+.cart-header1 {
+    border-bottom: 1px solid #8f00ff;
+    padding-bottom: 16px;
+}
+
+.cart-total {
+    float: right;
+}
+
+.cart-items {
+    padding-top: 22px;
+}
+
+li {
+    margin-bottom: 19px;
+}
+
+img {
+    float: left;
+    margin-right: 13px;
+}
+
+.game {
+    display:block;
+    padding-top: 12px;
+    font-size: 16px;
+}
+
+.price1 {
+    color: #8f00ff;
+    margin-right: 9px;
+}
+
+.quantity1 {
+    color: gray;
+}
+
+.checkoutbtn {
+    background: #8f00ff;
+    color: white;
+    text-align: center;
+    padding: 13px;
+    text-decoration: none;
+    display: block;
+    border-radius: 5px;
+    font-size: 16px;
+    margin: 25px 0px 25px 0px;
+}
+
+.checkoutbtn:hover {
+    background: rgb(220, 133, 223);
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+}
+
+
+.badge {
+    background-color: #8f00ff;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+
+.container{
+    width: 100%;
+    flex-wrap:wrap;
+    height: auto;
+    display: grid;
+    margin-top: 250px;
+    grid-template-columns: repeat(8, 1fr);
+	grid-template-areas:
+    "header header header header header header header header" 
+    "header1 header1 header1 header1 header1 header1 . ."
+    "left  left1 left2 middle right2 right1 form ."
+    "left  left1 left2 middle right2 right1 . ."
+    "left  left1 left2 middle right2 right1 total ."
+    "left  left1 left2 middle right2 right1 check ."
+    "footer footer footer footer footer footer footer footer"; 
+}
+
+.shop-header {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    flex-direction: row;
+    border-bottom: 0.5px solid black;
+    margin-left: 10px;
+}
+
+.price {
+    grid-area: left2;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    flex-direction: column;
+    align-items: left;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+    flex-wrap:wrap;
+}
+
+.shop {
+    flex-wrap:wrap;
+    grid-area:left;
+    display: flex;
+    justify-content:space-evenly;
+    flex-direction: column;
+	
+}
+
+.descriptions {
+    flex-wrap:wrap;
+    grid-area: left1;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    flex-direction: column;
+    align-items: left;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+
+form {
+    flex-wrap:wrap;
+    grid-area: form;
+    display: flex;
+	align-items: left;
+    flex-direction: column;
+    align-items: left;
+    width: 100%;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.quantity {
+    flex-wrap:wrap;
+    grid-area: middle;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    flex-direction: column;
+    align-items: left;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.removal {
+    flex-wrap:wrap;
+    grid-area: right2;
+    display: flex;
+	justify-content: space-around;
+	align-items: center;
+    flex-direction: column;
+    align-items: left;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.remove-btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 15px;
+    margin: 5px 0 22px 0;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+  }
+  
+  input[type=text]:focus, input[type=password]:focus {
+    background-color: #ddd;
+    outline: none;
+  }
+  
+  hr {
+    border: 1px solid #f1f1f1;
+    margin-bottom: 25px;
+  }
+  .registerbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+    opacity: 0.9;
+  }
+
+  a {
+    color: dodgerblue;
+  }
+  .signin {
+    background-color: #f1f1f1;
+    text-align: center;
+  }
+
+.checkout {
+    grid-area:check;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    opacity: 0.9;
+	justify-content: space-around;
+	align-items: center;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    flex-wrap:wrap;
+}
+
+.total-amount {
+    flex-wrap:wrap;
+    grid-area: total;
+    display: flex;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+	justify-content: space-around;
+	align-items: center;
+    flex-direction: column;
+    align-items: left;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+
+.checkout:hover, .registerbtn:hover, .remove-btn:hover {
+    transform: scale(1.2);
+    transition: all 0.3s;
+    background-color: #8f00ff;
+
+}
+
+/*Shopping cart pictures*/
+.LoL {
+    background-image: url(../images/lol-mobile-logo.png);
+}
+.kenshi {
+    background-image: url(../images/kenshi-mobile-logo.png);
+}
+.OW {
+    background-image: url(../images/overwatch-mobile-logo.png);
+   
+}
+.WoW {
+    background-image: url(../images/wow-mobile-logo.png);
+}
+.LoL, .kenshi, .OW, .WoW {
+    flex-wrap:wrap;
+    align-items: center;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 2px;
+    border-bottom: 0.5px solid black;
+    background-repeat: no-repeat;
+    background-size: 50%;
+    margin-left: 20px;
+}
+
+.LoL:hover, .kenshi:hover, .OW:hover, .WoW:hover {
+      transform: scale(1.1);
+      transition:all .3s;
+}
