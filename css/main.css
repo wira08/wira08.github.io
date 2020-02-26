@@ -59,22 +59,17 @@ li {
 
 
 /*header shopping cart hover*/
-.cart-header:hover {
-	display: block;	
-}
-
-.fa-shopping-cart:hover {
+.cart:hover > .cart-header {
 	display: block;
-	width: 80%;
 }
 
 .cart-header {
-	width: 80%;
-    margin: 20px 0;
-    float: right;
+    margin-top: 60px;
     background: rgb(225, 214, 228);
     width:320px;
-    position: relative;
+    top: 0;
+    right: 0;
+    position: absolute;
     border-radius: 3px;
     padding:20px;
     display: none;

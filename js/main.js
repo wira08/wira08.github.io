@@ -11,13 +11,6 @@
     return w.Date.now()};t.debounce=o,t.throttle=i,t.isObject=u,t.isObjectLike=f,t.isSymbol=c,t.now=D,t.toNumber=a,t.VERSION=p,typeof define=="function"&&typeof define.amd=="object"&&define.amd?(w._=t, define(function(){return t})):N?((N.exports=t)._=t,S._=t):w._=t}).call(this);
 
 
-    //Header shopping cart toggle//
-    // $(document).ready(function(){
-        
-    //     $("#cart").click(function(){
-    //         $("p").toggle();
-    //     });
-    // });
 
 // This function will run a throttled script every 300 ms
 var checkHeader = _.throttle(() => {
