@@ -12,13 +12,15 @@
 
 
     //Header shopping cart toggle//
-    $(document).ready(function(){
- 
-        $("#cart").click(function(){
-            $("p").toggle();
-        });
+    // $(document).ready(function(){
+        
+    //     $("#cart").click(function(){
+    //         $("p").toggle();
+    //     });
+    // });
+
 // This function will run a throttled script every 300 ms
-var checkHeader = _.throttle(() => { 
+var checkHeader = _.throttle(() => {
     console.log('checkHeader');
 
     // Detect scroll position
@@ -39,4 +41,3 @@ var checkHeader = _.throttle(() => {
 
 // Run the checkHeader function every time you scroll
 window.addEventListener('scroll', checkHeader);
-});

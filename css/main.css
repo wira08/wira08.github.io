@@ -56,9 +56,11 @@ li {
 	color: #FFFFFF;
 }
 /*header icons ends*/
+
+
 /*header shopping cart hover*/
-.container3:hover {
-	
+.cart-header:hover {
+	display: block;	
 }
 
 .fa-shopping-cart:hover {
@@ -75,6 +77,7 @@ li {
     position: relative;
     border-radius: 3px;
     padding:20px;
+    display: none;
 }
 
 .cart-header:after {
@@ -88,7 +91,7 @@ li {
 	pointer-events: none;
 	border-bottom-color: white;
 	border-width: 8px;
-    margin-left: -8
+    margin-left: -8px;
 }
 
 
