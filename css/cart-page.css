@@ -17,7 +17,7 @@
     "header header header header header  header header3" 
     "header1 header1 header1  header1 header1 . ."
     "left  left1 left2 middle right2 form form"
-    "left  left1 left2 middle right2 form form"
+    "left  left1 left2 middle right2 . ."
     "left  left1 left2 middle right2 total total"
     "left  left1 left2 middle right2 check check"
     "footer footer footer footer footer  footer footer"; 
@@ -124,7 +124,8 @@ form {
     height: 50px;
     width: 150px;
     opacity: 0.9;
-	align-items: center;
+    justify-content: space-around;
+    align-items: center;
     margin-left: 10px;
     flex-wrap:wrap;
 }
@@ -136,10 +137,11 @@ form {
     display: inline-block;
     border: none;
     background: #f1f1f1;
-	justify-content: space-around;
-	align-items: center;
+    justify-content: space-around;
+    align-items: center;
     flex-direction: column;
     align-items: left;
+    margin-top: 10px;
     width: 100px;
     margin-bottom: 2px;
     margin-left: 10px;
