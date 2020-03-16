@@ -1,147 +1,60 @@
 @import "main.css";
+/*Mattias Källström*/
+/*@media screen and (max-width: 767px)
 
+*/
 
-
-
-
-.cart:hover {
-    display: block!important;
-}
-.cart-header {
-    display:none;
-    margin: 15px 0;
-    float: right;
-    background: rgb(225, 214, 228);
-    width:330px;
-    position: relative;
-    border-radius: 3px;
-    padding:20px;
-}
-
-.cart-header:after {
-	bottom: 100%;
-	left: 90%;
-	border: solid transparent;
-	content: " ";
-	height: 0;
-	width: 0;
-	position: absolute;
-	pointer-events: none;
-	border-bottom-color: white;
-	border-width: 8px;
-    margin-left: -8
-}
-
-
-.cart-header1 {
-    border-bottom: 1px solid #8f00ff;
-    padding-bottom: 16px;
-}
-
-.cart-total {
-    float: right;
-}
-
-.cart-items {
-    padding-top: 22px;
-}
-
-li {
-    margin-bottom: 19px;
-}
-
-img {
-    float: left;
-    margin-right: 13px;
-}
-
-.game {
-    display:block;
-    padding-top: 12px;
-    font-size: 16px;
-}
-
-.price1 {
-    color: #8f00ff;
-    margin-right: 9px;
-}
-
-.quantity1 {
-    color: gray;
-}
-
-.checkoutbtn {
-    background: #8f00ff;
-    color: white;
-    text-align: center;
-    padding: 13px;
-    text-decoration: none;
-    display: block;
-    border-radius: 5px;
-    font-size: 16px;
-    margin: 25px 0px 25px 0px;
-}
-
-.checkoutbtn:hover {
-    background: rgb(220, 133, 223);
-}
-
-.clearfix:after {
-    display: table;
-    clear: both;
-}
-
-
-.badge {
-    background-color: #8f00ff;
-    border-radius: 10px;
-    color: white;
-    display: inline-block;
-    font-size: 16px;
-    line-height: 1;
-    padding: 3px 7px;
-    text-align: center;
-    vertical-align: middle;
-    white-space: nowrap;
-}
-
+/*Desktop media start*/
+@media screen and (min-width: 1200px) {
 .container{
     width: 100%;
     flex-wrap:wrap;
     height: auto;
     display: grid;
     margin-top: 250px;
-    grid-template-columns: repeat(8, 1fr);
-	grid-template-areas:
-    "header header header header header header header header" 
-    "header1 header1 header1 header1 header1 header1 . ."
-    "left  left1 left2 middle right2 right1 form ."
-    "left  left1 left2 middle right2 right1 . ."
-    "left  left1 left2 middle right2 right1 total ."
-    "left  left1 left2 middle right2 right1 check ."
-    "footer footer footer footer footer footer footer footer"; 
+    grid-template-columns: repeat(7, 1fr);
+    grid-template-areas:
+    "header header header header header  header header3" 
+    "header1 header1 header1  header1 header1 . ."
+    "left  left1 left2 middle right2 form form"
+    "left  left1 left2 middle right2 . ."
+    "left  left1 left2 middle right2 total total"
+    "left  left1 left2 middle right2 check check"
+    "footer footer footer footer footer  footer footer"; 
 }
 
-.shop-header {
+.shop-header, .price-header, .quantity-header, .description-header, .remove-header, .register-header {
     display: flex;
     width: 100%;
     justify-content: space-between;
     flex-direction: row;
-    border-bottom: 0.5px solid black;
-    margin-left: 10px;
+    border-bottom: 0.5px solid rgb(75, 62, 62);
+    margin: 0 -10px 0 0;
 }
+
 
 .price {
     grid-area: left2;
     display: flex;
-	justify-content: space-around;
-	align-items: center;
+    justify-content: space-around;
+    align-items: space-between;
     flex-direction: column;
     align-items: left;
     width: 100px;
     margin-bottom: 2px;
-    margin-left: 10px;
+    margin-left: 5px;
     flex-wrap:wrap;
+}
+
+    
+.descriptions {
+    flex-wrap:wrap;
+    grid-area: left1;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    margin-bottom: 2px;
+    margin-left: 5px;
 }
 
 .shop {
@@ -150,31 +63,14 @@ img {
     display: flex;
     justify-content:space-evenly;
     flex-direction: column;
-	
 }
-
-.descriptions {
-    flex-wrap:wrap;
-    grid-area: left1;
-    display: flex;
-	justify-content: space-around;
-	align-items: center;
-    flex-direction: column;
-    align-items: left;
-    width: 100px;
-    margin-bottom: 2px;
-    margin-left: 10px;
-}
-
 
 form {
     flex-wrap:wrap;
     grid-area: form;
     display: flex;
-	align-items: left;
     flex-direction: column;
-    align-items: left;
-    width: 100%;
+    width: 80%;
     margin-bottom: 2px;
     margin-left: 10px;
 }
@@ -184,9 +80,7 @@ form {
     grid-area: middle;
     display: flex;
 	justify-content: space-around;
-	align-items: center;
     flex-direction: column;
-    align-items: left;
     width: 100px;
     margin-bottom: 2px;
     margin-left: 10px;
@@ -206,15 +100,512 @@ form {
 }
 
 .remove-btn {
+    display: flex;
+    flex-wrap:wrap;
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
-    margin: 8px 0;
+    margin: 7px 50px;
     border: none;
     cursor: pointer;
     width: 100%;
     opacity: 0.9;
 }
+.checkout {
+    grid-area:check;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: center;
+    background-color: #4CAF50;
+    color: white;
+    padding: 16px 20px;
+    border: none;
+    cursor: pointer;
+    height: 50px;
+    width: 150px;
+    opacity: 0.9;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: 10px;
+    flex-wrap:wrap;
+}
+
+.total-amount {
+    flex-wrap:wrap;
+    grid-area: total;
+    display: flex;
+    display: inline-block;
+    border: none;
+    background: #f1f1f1;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    align-items: left;
+    margin-top: 10px;
+    width: 100px;
+    margin-bottom: 2px;
+    margin-left: 10px;
+}
+}
+/*Desktop media end*/
+
+/*Laptop media start*/
+@media screen and (max-width: 1200px) and (min-width: 960px) {
+    .container{
+        width: 100%;
+        flex-wrap:wrap;
+        height: auto;
+        display: grid;
+        margin-top: 250px;
+        grid-template-columns: repeat(7, 1fr);
+        grid-template-areas:
+        "header header header header header  header header3" 
+        "header1 header1 header1  header1 header1 . ."
+        "left  left1 left2 middle right2 form form"
+        "left  left1 left2 middle right2 . ."
+        "left  left1 left2 middle right2 total total"
+        "left  left1 left2 middle right2 check check"
+        "footer footer footer footer footer  footer footer"; 
+    }
+    
+    .shop-header, .price-header, .quantity-header, .description-header, .remove-header, .register-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+        border-bottom: 0.5px solid rgb(75, 62, 62);
+        margin: 0 -10px 0 0;
+    }
+    
+    .shop {
+        flex-wrap:wrap;
+        grid-area:left;
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        
+    }
+    
+    .price {
+        grid-area: left2;
+        display: flex;
+        justify-content: space-around;
+        align-items: space-between;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 5px;
+        flex-wrap:wrap;
+    }
+    
+        
+    .descriptions {
+        flex-wrap:wrap;
+        grid-area: left1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    
+    
+    form {
+        flex-wrap:wrap;
+        grid-area: form;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        align-items: left;
+        width: 80%;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+    
+    .quantity {
+        flex-wrap:wrap;
+        grid-area: middle;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        width: 50px;
+        padding-right: 100px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+    
+    .removal {
+        flex-wrap:wrap;
+        grid-area: right2;
+        display: flex;
+        justify-content: space-around;
+        
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100px;
+        padding-right: 10px;
+        margin-bottom: 2px;
+        
+    }
+    
+    .remove-btn {
+        display: flex;
+        flex-wrap:wrap;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .checkout {
+        grid-area:check;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        height: 50px;
+        width: 150px;
+        opacity: 0.9;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+        flex-wrap:wrap;
+    }
+    
+    .total-amount {
+        flex-wrap:wrap;
+        grid-area: total;
+        display: flex;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+}
+
+/*Laptop media end*/
+
+/*Tablet media start*/
+@media only screen and (min-width: 760px) and (max-width: 960px) {
+    .container{
+        width: 100%;
+        flex-wrap:wrap;
+        height: auto;
+        display: grid;
+        margin-top: 250px;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-areas:
+        "header header header header header" 
+        "header1 header1 header1 header1 header1"
+        "left  left1 left2 middle right2 "
+        "left  left1 left2 middle right2 "
+        "left  left1 left2 middle right2 "
+        "total total total total total"
+        "check check check check check"
+        "form form form form form "
+        "footer footer footer footer footer";  
+    }
+    
+    .shop-header, .price-header, .quantity-header, .description-header, .remove-header, .register-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+        border-bottom: 0.5px solid rgb(75, 62, 62);
+        margin: 0 -10px 0 0;
+    }
+
+    .shop {
+        flex-wrap:wrap;
+        grid-area:left;
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        
+    }
+    
+    .price {
+        grid-area: left2;
+        display: flex;
+        justify-content: space-around;
+        align-items: space-between;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 5px;
+        flex-wrap:wrap;
+    }
+    
+        
+    .descriptions {
+        flex-wrap:wrap;
+        grid-area: left1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    
+    
+    form {
+        flex-wrap:wrap;
+        grid-area: form;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        align-items: left;
+        width: 80%;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+    
+    .quantity {
+        flex-wrap:wrap;
+        grid-area: middle;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    
+    .removal {
+        flex-wrap:wrap;
+        grid-area: right2;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+    
+    .remove-btn {
+        display: flex;
+        flex-wrap:wrap;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 7px 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .checkout {
+        grid-area:check;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        height: 50px;
+        width: 150px;
+        opacity: 0.9;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+        flex-wrap:wrap;
+    }
+    
+    .total-amount {
+        flex-wrap:wrap;
+        grid-area: total;
+        display: flex;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 10px;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+}
+
+/*Tablet media end*/
+
+/*Phones media start*/
+@media screen and (max-width: 760px) {
+.container{
+        width: 100%;
+        flex-wrap:wrap;
+        height: auto;
+        display: grid;
+        margin-top: 250px;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-areas:
+        "header header header header" 
+        "header1 header1 header1 header1 "
+        "left  left1 left2 middle"
+        "left  left1 left2 middle"
+        "left  left1 left2 middle"
+        "total total total total"
+        "check check check check"
+        "form form form form "
+        "footer footer footer footer"; 
+    }
+    
+    .shop-header, .price-header, .quantity-header, .description-header, .remove-header, .register-header {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: row;
+        border-bottom: 0.5px solid rgb(75, 62, 62);
+        margin: 0 -10px 0 0;
+    }
+
+    .shop {
+        flex-wrap:wrap;
+        grid-area:left;
+        display: flex;
+        justify-content:space-evenly;
+        flex-direction: column;
+        
+    }
+    
+    .price {
+        grid-area: left2;
+        display: flex;
+        justify-content: space-around;
+        align-items: space-between;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 5px;
+        flex-wrap:wrap;
+    }
+    
+        
+    .descriptions {
+        flex-wrap:wrap;
+        grid-area: left1;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    
+    
+    form {
+        flex-wrap:wrap;
+        grid-area: form;
+        display: flex;
+        align-items: left;
+        flex-direction: column;
+        align-items: left;
+        width: 80%;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+    
+    .quantity {
+        flex-wrap:wrap;
+        grid-area: middle;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 5px;
+    }
+    
+    .removal {
+        flex-wrap:wrap;
+        grid-area: middle;
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+        flex-direction: column;
+        width: 100px;
+        margin: 0 5px 0 5px;
+    }
+    
+    .remove-btn {
+        display: flex;
+        flex-wrap:wrap;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        margin: 100px 0 0 0;
+        border: none;
+        cursor: pointer;
+        width: 100%;
+        opacity: 0.9;
+    }
+    .checkout {
+        grid-area:check;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content: center;
+        background-color: #4CAF50;
+        color: white;
+        padding: 16px 20px;
+        border: none;
+        cursor: pointer;
+        height: 50px;
+        width: 150px;
+        opacity: 0.9;
+        justify-content: space-around;
+        align-items: center;
+        margin-left: 10px;
+        flex-wrap:wrap;
+    }
+    
+    .total-amount {
+        flex-wrap:wrap;
+        grid-area: total;
+        display: flex;
+        display: inline-block;
+        border: none;
+        background: #f1f1f1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+        align-items: left;
+        margin-top: 10px;
+        width: 100px;
+        margin-bottom: 2px;
+        margin-left: 10px;
+    }
+}
+
+/*Phones media end*/
 
 input[type=text], input[type=password] {
     width: 100%;
@@ -230,6 +621,13 @@ input[type=text], input[type=password] {
     outline: none;
   }
   
+input[type="number"] {
+    width: 50px;
+    height: 40px;
+    border-bottom: 10px;
+
+}
+
   hr {
     border: 1px solid #f1f1f1;
     margin-bottom: 25px;
@@ -238,7 +636,7 @@ input[type=text], input[type=password] {
     background-color: #4CAF50;
     color: white;
     padding: 16px 20px;
-    margin: 8px 0;
+    margin: 7px 0;
     border: none;
     cursor: pointer;
     width: 100%;
@@ -253,47 +651,10 @@ input[type=text], input[type=password] {
     text-align: center;
   }
 
-.checkout {
-    grid-area:check;
-    display:flex;
-    flex-wrap:wrap;
-    justify-content: center;
-    background-color: #4CAF50;
-    color: white;
-    padding: 16px 20px;
-    margin: 8px 0;
-    border: none;
-    cursor: pointer;
-    height: 50px;
-    width: 150px;
-    opacity: 0.9;
-	justify-content: space-around;
-	align-items: center;
-    margin-bottom: 10px;
-    margin-left: 10px;
-    flex-wrap:wrap;
-}
-
-.total-amount {
-    flex-wrap:wrap;
-    grid-area: total;
-    display: flex;
-    display: inline-block;
-    border: none;
-    background: #f1f1f1;
-	justify-content: space-around;
-	align-items: center;
-    flex-direction: column;
-    align-items: left;
-    width: 100px;
-    margin-bottom: 2px;
-    margin-left: 10px;
-}
-
 .checkout:hover, .registerbtn:hover, .remove-btn:hover {
     transform: scale(1.2);
     transition: all 0.3s;
-    background-color: #8f00ff;
+    background-color: #7f00ff;
 
 }
 
@@ -315,15 +676,18 @@ input[type=text], input[type=password] {
     flex-wrap:wrap;
     align-items: center;
     width: 100%;
+    justify-content: space-around;
     height: 200px;
     margin-bottom: 2px;
     border-bottom: 0.5px solid black;
     background-repeat: no-repeat;
     background-size: 50%;
     margin-left: 20px;
+    margin-top: 100px;
 }
 
 .LoL:hover, .kenshi:hover, .OW:hover, .WoW:hover {
       transform: scale(1.1);
       transition:all .3s;
 }
+

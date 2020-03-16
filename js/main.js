@@ -13,7 +13,7 @@
 
 
 // This function will run a throttled script every 300 ms
-var checkHeader = _.throttle(() => { 
+var checkHeader = _.throttle(() => {
     console.log('checkHeader');
 
     // Detect scroll position

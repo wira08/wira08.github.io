@@ -1,9 +1,9 @@
 /*Fonts*/
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 
-*{
+/**{
 	box-sizing: border-box;
-}
+}*/
 body{
 	margin: 0;
 	padding: 0;
@@ -18,7 +18,7 @@ input[type=checkbox] {
 }
 
 /*header navbar style*/
-ul {
+.ul-header {
 	display: flex;
 	list-style: none;
 	align-items: center;
@@ -32,10 +32,9 @@ li {
 	font-size: 27px;
 }
 .nav-list li{
-	/*background: #000000;*/
-	display: flex;
-	justify-content: space-between;
-	float: left;
+	/*display: flex;*/
+	/*justify-content: space-between;*/
+	/*float: left;*/
 	padding: 1rem;
 	text-decoration: none;
 	font-weight: bold;
@@ -48,10 +47,7 @@ li {
 .nav-list li a:hover {
 	color: #8f00ff;
 }
-
-/*p {
-	color: #000000;
-}*/
+/*header navbar style end*/
 
 
 /*header icons*/
@@ -61,6 +57,119 @@ li {
 }
 /*header icons ends*/
 
+
+/*header shopping cart hover*/
+.cart:hover > .cart-header {
+	display: block;
+}
+
+.cart-header {
+    margin-top: 110px;
+    background: rgb(225, 214, 228);
+    width:320px;
+    top: 0;
+    right: 0;
+    position: absolute;
+    border-radius: 3px;
+    padding:20px;
+    display: none;
+}
+
+.cart-header:after {
+	bottom: 100%;
+	left: 90%;
+	border: solid transparent;
+	content: " ";
+	height: 0;
+	width: 0;
+	position: absolute;
+	pointer-events: none;
+	border-bottom-color: white;
+	border-width: 8px;
+    margin-left: -8px;
+}
+
+
+.cart-header1 {
+    border-bottom: 1px solid #8f00ff;
+    padding-bottom: 16px;
+}
+
+.cart-total {
+    float: right;
+}
+
+.cart-items {
+    padding-top: 10px;
+}
+
+li {
+    margin-bottom: 19px;
+}
+
+.header-game-logo {
+	float: left;
+	margin-right: 12px;
+}
+
+.game {
+	
+    display:inline-block;
+    padding-top: 1px;
+    font-size: 16px;
+}
+
+.price1 {
+    color: #8f00ff;
+    margin-right: 8px;
+}
+
+.quantity1 {
+    color: gray;
+}
+
+
+
+.checkoutbtn {
+  background-color: #8f00ff;
+  display: flex;
+  justify-content: space-around;
+  padding: 12px;;
+  border-radius: 3px;
+  font-size: 16px;
+  margin: 25px 25px 0 25px;
+}
+
+.checkoutbtn:hover {
+    background: rgb(220, 133, 223);
+}
+
+.clearfix {
+	font-size: 16px;
+}
+
+.clearfix:after {
+    display: table;
+    clear: both;
+}
+
+
+.badge {
+    background-color: #8f00ff;
+    border-radius: 10px;
+    color: white;
+    display: inline-block;
+    font-size: 16px;
+    line-height: 1;
+    padding: 3px 7px;
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+}
+/*header shopping cart hover ends*/
+
+
+/*mobile header style*/
 .mobile-size-gamebar-logo {
 	display: none;
 }
@@ -79,17 +188,17 @@ a:hover{
 	color: #8f00ff;
 }
 
-
 .vl {
 	border-left: 1px solid black;
 	height: 80px;
 }
 
-/*front page coach cards*/
 .main-header{
 	text-align: center;
 	margin-top: 75px;
+	padding: 0 10px;
 }
+
 .front-page-coach,
 .front-page-games {
 	display: flex;
@@ -97,6 +206,8 @@ a:hover{
 	flex-wrap: wrap;
 	margin: 20px 0;
 }
+
+/*front page coach cards*/
 .profile {
 	background-image: url("http://starkovtattoo.spb.ru/images/200/DSC100224440.png");
 	background-attachment: fixed;
@@ -169,8 +280,12 @@ a:hover{
 
 /*front page how it work section*/
 .fa-stack,
-.fa-arrow-right{
+.fa-arrow-right,
+.fa-arrow-down{
 	font-size: 50px;
+}
+.fa-arrow-down {
+	display: none;
 }
 .front-page-howitwork {
 	display: flex;
@@ -186,10 +301,7 @@ a:hover{
 
 
 /*front page game cards*/
-.wow-profile,
-.kenshi-profile,
-.lol-profile,
-.overwatch-profile {
+.gamecard {
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -204,10 +316,7 @@ a:hover{
 	cursor:pointer;
 }
 
-.wow-profile:hover,
-.kenshi-profile:hover,
-.lol-profile:hover,
-.overwatch-profile:hover {
+.gamecard:hover{
 	transform: scale(1);
 	box-shadow: 0 37.125px 70px -12.125px rgba(0,0,0,0.2);
 }
@@ -407,7 +516,8 @@ label.sticky{
 		"main main main main main main main main main main main main"
 		"footer footer footer footer footer footer footer footer footer footer footer footer";
 	}
-	.profile {
+	.profile,
+	.gamecard {
 		flex: 1 1 190px;
 		margin: 10px 10px;
 	}
@@ -453,11 +563,13 @@ label.sticky{
 		border-right: none;
 	}
 
-	.profile {
+	.profile,
+	.gamecard {
 		flex: 1 1 290px;
 		margin: 10px 15px;
 	}
 }
+
 /*Mobile*/
 @media screen and (max-width: 768px) {
 	.container{
@@ -519,6 +631,16 @@ label.sticky{
 		display: none;
 	}
 	.mobile-size-gamebar-logo{
+		display: block;
+	}
+	.front-page-howitwork {
+		flex-direction: column;
+		align-items: center;
+	}
+	.fa-arrow-right {
+		display: none;
+	}
+	.fa-arrow-down {
 		display: block;
 	}
 }
@@ -593,7 +715,6 @@ label.sticky{
 	.menu{
 		position: fixed;
 		margin-left: -101%;
-		padding: 10px;
 		height: 100%;
 		width: 100%;
 		top: 0;
